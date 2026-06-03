@@ -182,8 +182,8 @@ export default function AboutPage() {
               {
                 name: 'Ivy Yang',
                 nameCn: '杨蕊',
-                title: 'Client Relations Manager',
-                titleCn: '客户关系经理',
+                title: 'Office Manager',
+                titleCn: '办公室经理',
                 credentials: 'MA, Mass Communication',
                 bio: 'Ivy is the welcoming voice of WINSUN. She ensures every client feels informed, supported, and confident at every stage of their immigration journey.',
                 bioCn: 'Ivy 是 WINSUN 温暖的门面，确保每位客户在移民旅程的每个阶段都感到知情、受支持和充满信心。',
