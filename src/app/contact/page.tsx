@@ -156,7 +156,7 @@ export default function ContactPage() {
                   <h4 className="font-serif text-[#0F2A4A] text-2xl mb-3">Message Sent!</h4>
                   <p className="text-[#C9A96E] mb-4">消息已发送！</p>
                   <p className="text-gray-500 text-sm leading-relaxed">
-                    Thank you for reaching out. A confirmation email has been sent to <strong>{form.email}</strong>. We will be in touch within 1–2 business days.
+                    Thank you for reaching out. A confirmation email has been sent to <strong>{form.email}</strong>. Our team will follow up from <strong>winnie@winsunimmigration.ca</strong> within 1–2 business days.
                   </p>
                   <p className="text-gray-400 text-xs mt-2 leading-relaxed">
                     确认邮件已发送至您的邮箱，我们将在1–2个工作日内与您联系。
