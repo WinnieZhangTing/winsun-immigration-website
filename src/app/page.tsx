@@ -273,10 +273,59 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Founder Profile ── */}
+      <section className="py-24 bg-white border-t border-[#E2E8F0]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <div className="section-label justify-center mb-4">
+              <span className="gold-line" />
+              Principal Consultant
+              <span className="gold-line" />
+            </div>
+          </div>
+          <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-3xl p-8 sm:p-12 lg:p-14 flex flex-col lg:flex-row gap-10 items-start lg:items-center shadow-sm">
+            {/* Photo */}
+            <div className="flex-shrink-0 mx-auto lg:mx-0">
+              <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden border-4 border-[#C9A96E]/30 shadow-lg">
+                <Image
+                  src="https://cdn.sanity.io/images/3dek4247/production/4ec00417dbb113e4855e29630264add9b82ca1c0-819x1024.png?w=400&auto=format"
+                  alt="Ting (Winnie) Zhang, RCIC-IRB"
+                  width={176}
+                  height={176}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+            {/* Bio */}
+            <div className="flex-1">
+              <div className="flex flex-wrap items-center gap-3 mb-1">
+                <h3 className="font-serif text-3xl text-[#0F2A4A] font-semibold">Ting Zhang, RCIC-IRB</h3>
+                <span className="px-3 py-1 bg-[#C9A96E]/10 border border-[#C9A96E]/30 rounded-full text-[#C9A96E] text-xs font-semibold tracking-wide">Licence R731688</span>
+              </div>
+              <p className="text-[#C9A96E] font-medium mb-1">Founder & Principal Consultant</p>
+              <p className="text-gray-400 text-sm mb-4">创始人及首席顾问 · 持牌移民顾问 | 女王大学移民法文凭 | MBA | PMP</p>
+              <div className="flex flex-wrap gap-2 mb-5">
+                {['MBA · Asper School of Business', "Queen's University Immigration Law", 'PMP Certified', 'RCIC-IRB · Class L3'].map((tag) => (
+                  <span key={tag} className="px-3 py-1 bg-white border border-[#E2E8F0] rounded-full text-[#0F2A4A] text-xs font-medium shadow-sm">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed mb-2">
+                Ting Zhang is the Founder and Principal Consultant of WINSUN Immigration Solutions Inc. She is a licensed RCIC-IRB consultant with formal immigration law education from Queen's University, an MBA from the Asper School of Business, and professional project management training. She combines regulated immigration consulting with business strategy, helping entrepreneurs, families, workers, and students build practical pathways to Canada.
+              </p>
+              <p className="text-gray-400 text-xs leading-relaxed">
+                Ting Zhang是WINSUN移民解决方案有限公司的创始人及首席顾问。她持有CICC颁发的RCIC-IRB执照，拥有女王大学移民法研究生文凭、Asper商学院MBA学位及PMP项目管理认证，将专业移民咨询与商业战略深度融合，为创业者、家庭、职场人士及学生构建通往加拿大的实践路径。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Professional Credentials ── */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+      <section className="py-24 bg-[#F8FAFC]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
             <div className="section-label justify-center mb-4">
               <span className="gold-line" />
               Verified Qualifications
@@ -286,53 +335,143 @@ export default function HomePage() {
             <p className="text-[#C9A96E] text-lg font-light">专业资质认证</p>
           </div>
 
-          {/* Credential checklist */}
-          <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-14">
-            {[
-              { en: 'Licensed RCIC Consultant', cn: '持牌移民顾问 · CICC认证' },
-              { en: "Queen's University Immigration Law Graduate Diploma", cn: '女王大学移民法研究生文凭' },
-              { en: 'MBA – Asper School of Business', cn: 'MBA · 曼省大学Asper商学院' },
-              { en: 'PMP Certified Project Manager', cn: 'PMP认证项目管理师' },
-              { en: 'BA – Business Administration', cn: '商业管理学士' },
-              { en: 'French Language Certificate', cn: '法语语言证书' },
-            ].map((c) => (
-              <div key={c.en} className="flex items-start gap-3 max-w-xs">
-                <div className="w-6 h-6 rounded-full bg-[#C9A96E]/15 border border-[#C9A96E]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-3.5 h-3.5 text-[#C9A96E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                  </svg>
+          {/* Featured RCIC + other credentials grid */}
+          <div className="grid lg:grid-cols-3 gap-6 mb-14">
+            {/* Featured RCIC card */}
+            <div className="lg:col-span-1 bg-[#0F2A4A] rounded-2xl p-8 flex flex-col items-start shadow-lg border border-[#C9A96E]/20 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-[#C9A96E]/5 -translate-y-1/2 translate-x-1/2 blur-2xl pointer-events-none" />
+              <span className="px-3 py-1 bg-[#C9A96E]/20 border border-[#C9A96E]/40 rounded-full text-[#C9A96E] text-xs font-semibold tracking-widest uppercase mb-5">
+                Featured Credential
+              </span>
+              <div className="w-12 h-12 rounded-xl bg-[#C9A96E]/10 border border-[#C9A96E]/30 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-[#C9A96E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <h4 className="font-serif text-white text-xl font-semibold mb-1 leading-snug">Licensed RCIC-IRB Consultant</h4>
+              <p className="text-[#C9A96E] text-sm mb-1">持牌移民顾问 · CICC认证</p>
+              <p className="text-white/50 text-xs font-mono mb-6">Licence No. R731688 · Class L3-IRB · Active</p>
+              <div className="mt-auto w-full">
+                <div className="w-full aspect-[4/3] rounded-xl overflow-hidden border border-[#C9A96E]/20 mb-5 bg-white/5">
+                  <Image src="/cert-rcic.jpg" alt="RCIC Licence" width={300} height={225} className="w-full h-full object-cover" unoptimized />
                 </div>
-                <div>
-                  <p className="text-[#0F2A4A] font-semibold text-sm leading-snug">{c.en}</p>
-                  <p className="text-gray-400 text-xs mt-0.5">{c.cn}</p>
+                <Link
+                  href="https://college-ic.ca/protecting-the-public/find-an-immigration-consultant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full py-3 rounded-xl border border-[#C9A96E] text-[#C9A96E] text-sm font-semibold hover:bg-[#C9A96E] hover:text-[#0F2A4A] transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  Verify My Licence
+                </Link>
+              </div>
+            </div>
+
+            {/* Other 5 credentials */}
+            <div className="lg:col-span-2 grid sm:grid-cols-2 gap-4 content-start">
+              {[
+                { src: '/cert-queens.jpg', label: "Queen's University", labelCn: '女王大学移民法研究生文凭', tag: 'Graduate Diploma' },
+                { src: '/cert-mba.jpg', label: 'MBA – Asper School', labelCn: 'MBA · 曼省大学Asper商学院', tag: 'MBA' },
+                { src: '/cert-pmp.jpg', label: 'PMP Certification', labelCn: 'PMP认证项目管理师', tag: 'PMP' },
+                { src: '/cert-ba.jpg', label: 'BA – Business Admin', labelCn: '商业管理学士', tag: 'BA Degree' },
+                { src: '/cert-french.jpg', label: 'French Language Certificate', labelCn: '法语语言证书', tag: 'French' },
+              ].map((cert) => (
+                <div key={cert.src} className="bg-white border border-[#E2E8F0] rounded-2xl p-4 flex gap-4 items-start shadow-sm hover:shadow-md transition-shadow group">
+                  <div className="w-16 h-20 rounded-lg overflow-hidden border border-[#E2E8F0] flex-shrink-0 bg-[#F8FAFC]">
+                    <Image src={cert.src} alt={cert.label} width={64} height={80} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" unoptimized />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <span className="inline-block px-2 py-0.5 bg-[#C9A96E]/10 text-[#C9A96E] text-xs font-semibold rounded-full mb-1.5">{cert.tag}</span>
+                    <p className="text-[#0F2A4A] font-semibold text-sm leading-snug">{cert.label}</p>
+                    <p className="text-gray-400 text-xs mt-0.5">{cert.labelCn}</p>
+                  </div>
+                </div>
+              ))}
+              {/* Checklist summary */}
+              <div className="sm:col-span-2 bg-[#0F2A4A]/5 border border-[#0F2A4A]/10 rounded-2xl p-5">
+                <p className="text-[#0F2A4A] font-semibold text-xs tracking-wider uppercase mb-3">All Verified Qualifications</p>
+                <div className="grid sm:grid-cols-2 gap-2">
+                  {[
+                    'Licensed RCIC-IRB · R731688',
+                    "Queen's University Immigration Law",
+                    'MBA · Asper School of Business',
+                    'PMP Certified Project Manager',
+                    'BA · Business Administration',
+                    'French Language Certificate',
+                  ].map((c) => (
+                    <div key={c} className="flex items-center gap-2">
+                      <svg className="w-3.5 h-3.5 text-[#C9A96E] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-[#0F2A4A] text-xs">{c}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
+            </div>
           </div>
+        </div>
+      </section>
 
-          {/* Certificate thumbnails */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+      {/* ── Meet the Team ── */}
+      <section className="py-24 bg-white border-t border-[#E2E8F0]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="section-label justify-center mb-4">
+              <span className="gold-line" />
+              Our People
+              <span className="gold-line" />
+            </div>
+            <h2 className="font-serif text-4xl sm:text-5xl text-[#0F2A4A] mb-3">Meet the WINSUN Team</h2>
+            <p className="text-[#C9A96E] text-lg font-light mb-3">认识我们的团队</p>
+            <p className="text-gray-500 text-sm max-w-xl mx-auto leading-relaxed">
+              A multidisciplinary team of immigration consultants, business advisors, project managers, and entrepreneurial specialists.
+            </p>
+            <p className="text-gray-400 text-xs max-w-xl mx-auto mt-1 leading-relaxed">
+              由移民顾问、商业顾问、项目管理人员及创业规划专家组成的专业团队。
+            </p>
+          </div>
+          <div className="relative rounded-3xl overflow-hidden shadow-xl">
+            <Image
+              src="/team-photo.jpg"
+              alt="WINSUN Immigration Solutions Team"
+              width={1400}
+              height={600}
+              className="w-full object-cover"
+              style={{ maxHeight: '480px', objectPosition: 'center 10%' }}
+              unoptimized
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#06182B]/70 via-transparent to-transparent" />
+            <div className="absolute bottom-8 left-8 right-8 flex flex-col sm:flex-row items-end sm:items-center justify-between gap-4">
+              <div>
+                <p className="text-white font-serif text-2xl mb-0.5">Our Winnipeg Team</p>
+                <p className="text-[#C9A96E] text-sm font-light">温尼伯专业团队</p>
+              </div>
+              <Link href="/about" className="flex-shrink-0 px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/30 rounded-xl text-white text-sm font-semibold hover:bg-white/20 transition-colors">
+                Meet Everyone →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Social Proof Metrics ── */}
+      <section className="py-20 bg-[#F8FAFC] border-t border-[#E2E8F0]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { src: '/cert-rcic.jpg', label: 'RCIC Licence', labelCn: '移民顾问执照' },
-              { src: '/cert-queens.jpg', label: "Queen's University", labelCn: '女王大学' },
-              { src: '/cert-mba.jpg', label: 'MBA', labelCn: 'MBA学位' },
-              { src: '/cert-pmp.jpg', label: 'PMP', labelCn: 'PMP认证' },
-              { src: '/cert-ba.jpg', label: 'BA Degree', labelCn: '学士学位' },
-              { src: '/cert-french.jpg', label: 'French Certificate', labelCn: '法语证书' },
-            ].map((cert) => (
-              <div key={cert.src} className="flex flex-col items-center gap-2 group">
-                <div className="w-full aspect-[3/4] rounded-xl overflow-hidden border border-[#E2E8F0] shadow-sm hover:shadow-md transition-shadow bg-[#F8FAFC]">
-                  <Image
-                    src={cert.src}
-                    alt={cert.label}
-                    width={200}
-                    height={267}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    unoptimized
-                  />
-                </div>
-                <p className="text-[#0F2A4A] text-xs font-semibold text-center">{cert.label}</p>
-                <p className="text-gray-400 text-xs text-center">{cert.labelCn}</p>
+              { number: '5+', label: 'Years of Experience', labelCn: '5年以上经验', desc: 'Serving clients in Canada and internationally' },
+              { number: '100+', label: 'Business Plans', labelCn: '100+商业计划书', desc: 'Prepared for entrepreneur and start-up clients' },
+              { number: '50+', label: 'Start-Up Visa Projects', labelCn: '50+创业移民项目', desc: 'Across technology, health, energy, education, and service sectors' },
+              { number: '2', label: 'Bilingual Service', labelCn: '中英文双语服务', desc: 'English and Chinese communication support' },
+            ].map((s) => (
+              <div key={s.label} className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow text-center">
+                <div className="font-serif text-4xl text-[#C9A96E] font-bold mb-2">{s.number}</div>
+                <p className="text-[#0F2A4A] font-semibold text-sm mb-0.5">{s.label}</p>
+                <p className="text-gray-400 text-xs mb-3">{s.labelCn}</p>
+                <p className="text-gray-500 text-xs leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
