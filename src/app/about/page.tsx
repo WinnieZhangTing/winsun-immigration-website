@@ -215,7 +215,7 @@ export default function AboutPage() {
                 nameCn: '王鑫',
                 title: 'Strategic Advisor',
                 titleCn: '战略顾问',
-                credentials: '',
+                credentials: 'Driving Instructor',
                 bio: 'Shin supports clients navigating the entrepreneur and investor immigration streams, bringing hands-on business experience and a strong network in the Winnipeg business community.',
                 bioCn: 'Shin 支持客户办理创业者和投资者移民流程，凭借丰富的商业经验和温尼伯商业圈的人脉为客户提供帮助。',
                 photo: 'https://cdn.sanity.io/images/3dek4247/production/b4f0a3d8ea49a29d76cfdb5eaadc966b39ff5ed5-1155x1132.png?w=400&auto=format',
