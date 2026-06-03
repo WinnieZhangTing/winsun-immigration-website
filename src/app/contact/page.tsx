@@ -103,14 +103,27 @@ export default function ContactPage() {
               <div className="flex gap-5">
                 <div className="w-12 h-12 rounded-xl bg-[#0F2A4A] flex items-center justify-center flex-shrink-0">
                   <svg className="w-5 h-5 text-[#C9A96E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-[#0F2A4A] font-semibold mb-1">Phone 电话</p>
+                  <a href="tel:4317775668" className="text-gray-600 hover:text-[#C9A96E] transition-colors">
+                    431-777-5668
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex gap-5">
+                <div className="w-12 h-12 rounded-xl bg-[#0F2A4A] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-[#C9A96E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
                   <p className="text-[#0F2A4A] font-semibold mb-1">Office Hours 营业时间</p>
-                  <p className="text-gray-600">Monday – Friday: 9:00 AM – 6:00 PM</p>
-                  <p className="text-gray-400 text-sm">周一至周五：上午9:00 – 下午6:00</p>
-                  <p className="text-gray-600 mt-1">Saturday: By Appointment 周六：预约制</p>
+                  <p className="text-gray-600">Monday – Sunday: 9:00 AM – 6:00 PM</p>
+                  <p className="text-gray-400 text-sm">周一至周日：上午9:00 – 下午6:00</p>
                 </div>
               </div>
             </div>
