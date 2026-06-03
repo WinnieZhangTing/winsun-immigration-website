@@ -44,11 +44,11 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
-                { href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划' },
+                { href: '/business-immigration', en: 'Business Immigration', cn: '商业移民' },
                 { href: '/work-permits', en: 'Work Permits & LMIA', cn: '工作许可' },
                 { href: '/study-permits', en: 'Study Permits', cn: '学习许可' },
                 { href: '/visitor-visa', en: 'Visitor Visa / TRV', cn: '访客签证' },
-                { href: '/business-immigration', en: 'Business Immigration', cn: '商业移民' },
+                { href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划' },
               ].map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-white/50 hover:text-[#C9A96E] text-sm transition-colors flex items-center gap-2 group">
