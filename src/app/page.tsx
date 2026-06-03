@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const services = [
   { icon: '🚀', href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划', desc: 'Launch your innovative business in Canada and obtain permanent residence through a designated organization.' },
@@ -268,6 +269,72 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Professional Credentials ── */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="section-label justify-center mb-4">
+              <span className="gold-line" />
+              Verified Qualifications
+              <span className="gold-line" />
+            </div>
+            <h2 className="font-serif text-4xl sm:text-5xl text-[#0F2A4A] mb-3">Professional Credentials</h2>
+            <p className="text-[#C9A96E] text-lg font-light">专业资质认证</p>
+          </div>
+
+          {/* Credential checklist */}
+          <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-14">
+            {[
+              { en: 'Licensed RCIC Consultant', cn: '持牌移民顾问 · CICC认证' },
+              { en: "Queen's University Immigration Law Graduate Diploma", cn: '女王大学移民法研究生文凭' },
+              { en: 'MBA – Asper School of Business', cn: 'MBA · 曼省大学Asper商学院' },
+              { en: 'PMP Certified Project Manager', cn: 'PMP认证项目管理师' },
+              { en: 'BA – Business Administration', cn: '商业管理学士' },
+              { en: 'French Language Certificate', cn: '法语语言证书' },
+            ].map((c) => (
+              <div key={c.en} className="flex items-start gap-3 max-w-xs">
+                <div className="w-6 h-6 rounded-full bg-[#C9A96E]/15 border border-[#C9A96E]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-3.5 h-3.5 text-[#C9A96E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-[#0F2A4A] font-semibold text-sm leading-snug">{c.en}</p>
+                  <p className="text-gray-400 text-xs mt-0.5">{c.cn}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Certificate thumbnails */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {[
+              { src: '/cert-rcic.jpg', label: 'RCIC Licence', labelCn: '移民顾问执照' },
+              { src: '/cert-queens.jpg', label: "Queen's University", labelCn: '女王大学' },
+              { src: '/cert-mba.jpg', label: 'MBA', labelCn: 'MBA学位' },
+              { src: '/cert-pmp.jpg', label: 'PMP', labelCn: 'PMP认证' },
+              { src: '/cert-ba.jpg', label: 'BA Degree', labelCn: '学士学位' },
+              { src: '/cert-french.jpg', label: 'French Certificate', labelCn: '法语证书' },
+            ].map((cert) => (
+              <div key={cert.src} className="flex flex-col items-center gap-2 group">
+                <div className="w-full aspect-[3/4] rounded-xl overflow-hidden border border-[#E2E8F0] shadow-sm hover:shadow-md transition-shadow bg-[#F8FAFC]">
+                  <Image
+                    src={cert.src}
+                    alt={cert.label}
+                    width={200}
+                    height={267}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    unoptimized
+                  />
+                </div>
+                <p className="text-[#0F2A4A] text-xs font-semibold text-center">{cert.label}</p>
+                <p className="text-gray-400 text-xs text-center">{cert.labelCn}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
