@@ -243,7 +243,6 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#0F2A4A] text-sm">{member.name}</p>
-                    <p className="text-gray-400 text-xs">{member.nameCn}</p>
                   </div>
                 </div>
                 <p className="text-[#C9A96E] font-semibold text-xs mb-0.5">{member.title}</p>
