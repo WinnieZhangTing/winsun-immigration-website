@@ -151,7 +151,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: 'Ting (Winnie) Zhang',
+                name: 'Winnie Zhang',
                 nameCn: '张婷',
                 title: 'Founder & CEO · RCIC-IRB',
                 titleCn: '创始人兼首席执行官 · 持牌移民顾问',
