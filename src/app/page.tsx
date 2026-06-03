@@ -76,10 +76,10 @@ export default function HomePage() {
                 您信赖的加拿大移民伙伴
               </p>
               <p className="text-white/60 text-lg leading-relaxed mb-3 max-w-xl">
-                Professional immigration consulting for entrepreneurs, workers, students, and families — delivered with expertise, integrity, and results-driven guidance.
+                Strategic immigration solutions for entrepreneurs, skilled workers, students, and families — guided by licensed professionals with real-world experience and a proven track record.
               </p>
               <p className="text-white/40 text-sm leading-relaxed mb-10 max-w-xl">
-                为创业者、职场人士、学生及家庭提供专业移民咨询，兼具专业性、诚信度与以结果为导向的专业指导。
+                为创业者、技术人才、留学生及家庭提供专业移民解决方案，由持牌移民顾问亲自规划，结合丰富实战经验与成功案例，为您实现加拿大移民目标。
               </p>
 
               <div className="flex flex-wrap gap-4">
