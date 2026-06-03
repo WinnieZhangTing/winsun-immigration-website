@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
@@ -260,6 +261,50 @@ export default function ContactPage() {
                   </p>
                 </form>
               )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social QR Codes */}
+      <section className="py-16 bg-[#F8FAFC] border-t border-[#E2E8F0]">
+        <div className="max-w-2xl mx-auto px-4 text-center">
+          <div className="section-label justify-center mb-4">
+            <span className="gold-line" />
+            扫码联系我们
+            <span className="gold-line" />
+          </div>
+          <p className="text-gray-500 text-sm mb-8">Scan to connect with us on WeChat or Xiaohongshu</p>
+          <div className="grid grid-cols-2 gap-8 max-w-sm mx-auto">
+            <div className="flex flex-col items-center gap-3">
+              <div className="w-36 h-36 rounded-2xl overflow-hidden border-2 border-[#C9A96E]/30 shadow-md bg-white p-2">
+                <Image
+                  src="/qr-wechat.png"
+                  alt="WeChat QR Code"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-lg">💬</span>
+                <p className="text-[#0F2A4A] font-semibold text-sm">微信 WeChat</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-3">
+              <div className="w-36 h-36 rounded-2xl overflow-hidden border-2 border-[#C9A96E]/30 shadow-md bg-white p-2">
+                <Image
+                  src="/qr-xiaohongshu.png"
+                  alt="Xiaohongshu QR Code"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-lg">📕</span>
+                <p className="text-[#0F2A4A] font-semibold text-sm">小红书 RED</p>
+              </div>
             </div>
           </div>
         </div>
