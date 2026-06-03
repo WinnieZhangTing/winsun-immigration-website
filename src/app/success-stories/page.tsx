@@ -108,7 +108,7 @@ export default function SuccessStoriesPage() {
               { n: '500+', en: 'Cases Approved', cn: '成功案例' },
               { n: '95%', en: 'Success Rate', cn: '成功率' },
               { n: '10+', en: 'Years Experience', cn: '从业年限' },
-              { n: '6+', en: 'Immigration Streams', cn: '移民途径' },
+              { n: '20+', en: 'International Regions', cn: '国际业务区域' },
             ].map((s) => (
               <div key={s.n}>
                 <div className="font-serif text-3xl font-bold text-[#0F2A4A] mb-0.5">{s.n}</div>
