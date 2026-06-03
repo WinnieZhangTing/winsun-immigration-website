@@ -137,7 +137,7 @@ export default function AboutPage() {
               width={1400}
               height={700}
               className="w-full object-cover"
-              style={{ maxHeight: '520px', objectPosition: 'center 25%' }}
+              style={{ maxHeight: '520px', objectPosition: 'center 10%' }}
               unoptimized
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#06182B]/60 via-transparent to-transparent" />
