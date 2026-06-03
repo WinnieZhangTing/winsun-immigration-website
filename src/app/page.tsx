@@ -465,7 +465,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { number: '5+', label: 'Years of Experience', labelCn: '5年以上经验', desc: 'Serving clients in Canada and internationally' },
+              { number: '10+', label: 'Years of Experience', labelCn: '10年以上经验', desc: 'Serving clients in Canada and internationally' },
               { number: '100+', label: 'Business Plans', labelCn: '100+商业计划书', desc: 'Prepared for entrepreneur and start-up clients' },
               { number: '50+', label: 'Start-Up Visa Projects', labelCn: '50+创业移民项目', desc: 'Across technology, health, energy, education, and service sectors' },
               { number: '2', label: 'Bilingual Service', labelCn: '中英文双语服务', desc: 'English and Chinese communication support' },
