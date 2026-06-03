@@ -299,7 +299,7 @@ export default function HomePage() {
             {/* Bio */}
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-3 mb-1">
-                <h3 className="font-serif text-3xl text-[#0F2A4A] font-semibold">Ting Zhang, RCIC-IRB</h3>
+                <h3 className="font-serif text-3xl text-[#0F2A4A] font-semibold">Winnie Zhang, RCIC-IRB</h3>
                 <span className="px-3 py-1 bg-[#C9A96E]/10 border border-[#C9A96E]/30 rounded-full text-[#C9A96E] text-xs font-semibold tracking-wide">Licence R731688</span>
               </div>
               <p className="text-[#C9A96E] font-medium mb-1">Founder & Principal Consultant</p>
@@ -312,10 +312,10 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-600 text-sm leading-relaxed mb-2">
-                Ting Zhang is the Founder and Principal Consultant of WINSUN Immigration Solutions Inc. She is a licensed RCIC-IRB consultant with formal immigration law education from Queen's University, an MBA from the Asper School of Business, and professional project management training. She combines regulated immigration consulting with business strategy, helping entrepreneurs, families, workers, and students build practical pathways to Canada.
+                Winnie Zhang is the Founder and Principal Consultant of WINSUN Immigration Solutions Inc. She is a licensed RCIC-IRB consultant with formal immigration law education from Queen's University, an MBA from the Asper School of Business, and professional project management training. She combines regulated immigration consulting with business strategy, helping entrepreneurs, families, workers, and students build practical pathways to Canada.
               </p>
               <p className="text-gray-400 text-xs leading-relaxed">
-                Ting Zhang是WINSUN移民解决方案有限公司的创始人及首席顾问。她持有CICC颁发的RCIC-IRB执照，拥有女王大学移民法研究生文凭、Asper商学院MBA学位及PMP项目管理认证，将专业移民咨询与商业战略深度融合，为创业者、家庭、职场人士及学生构建通往加拿大的实践路径。
+                Winnie Zhang是WINSUN移民解决方案有限公司的创始人及首席顾问。她持有CICC颁发的RCIC-IRB执照，拥有女王大学移民法研究生文凭、Asper商学院MBA学位及PMP项目管理认证，将专业移民咨询与商业战略深度融合，为创业者、家庭、职场人士及学生构建通往加拿大的实践路径。
               </p>
             </div>
           </div>
