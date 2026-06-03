@@ -157,7 +157,7 @@ export default function AboutPage() {
                 credentials: 'RCIC R731688 · Class L3-IRB · MBA · PMP',
                 bio: 'Ting is a Regulated Canadian Immigration Consultant (RCIC-IRB, R731688) licensed by the College of Immigration and Citizenship Consultants. She founded WINSUN to deliver expert, ethical immigration counsel across all major pathways — from Start-Up Visa to refugee proceedings.',
                 bioCn: '张婷是持牌加拿大移民顾问（RCIC-IRB，编号R731688），由移民和公民顾问学院授权。她创立WINSUN，为客户提供从创业签证到难民听证的全面专业移民服务。',
-                initials: 'TZ',
+                photo: 'https://cdn.sanity.io/images/3dek4247/production/4ec00417dbb113e4855e29630264add9b82ca1c0-819x1024.png?w=400&auto=format',
               },
               {
                 name: 'Summer Wang',
@@ -167,7 +167,7 @@ export default function AboutPage() {
                 credentials: 'MBA',
                 bio: 'Summer oversees day-to-day operations and client experience, ensuring every application is managed with precision and care from submission to approval.',
                 bioCn: 'Summer 负责日常运营和客户体验，确保每份申请从提交到获批都以精准和用心的态度处理。',
-                initials: 'SW',
+                photo: 'https://cdn.sanity.io/images/3dek4247/production/ff042e8b35ea5f222f76d1b80fc540230c801d0a-400x400.jpg?w=400&auto=format',
               },
               {
                 name: 'Jing Zhang',
@@ -177,7 +177,7 @@ export default function AboutPage() {
                 credentials: 'BA',
                 bio: 'Jing keeps every client file on track and on time. Her meticulous project management ensures no deadline is missed and every document is in order.',
                 bioCn: 'Jing 确保每位客户的申请按时推进，以严谨的项目管理确保没有截止日期被错过，每份文件都井然有序。',
-                initials: 'JZ',
+                photo: 'https://cdn.sanity.io/images/3dek4247/production/e36dea714d47937977f68a94fc8fb6a7cf6dfc08-1500x1001.jpg?rect=305,0,847,1001&w=400&auto=format',
               },
               {
                 name: 'Ivy Yang',
@@ -187,7 +187,7 @@ export default function AboutPage() {
                 credentials: 'MA, Mass Communication',
                 bio: 'Ivy is the welcoming voice of WINSUN. She ensures every client feels informed, supported, and confident at every stage of their immigration journey.',
                 bioCn: 'Ivy 是 WINSUN 温暖的门面，确保每位客户在移民旅程的每个阶段都感到知情、受支持和充满信心。',
-                initials: 'IY',
+                photo: 'https://cdn.sanity.io/images/3dek4247/production/3006aacd213aa7e99ebf4b56639f49791b4f9ced-1766x2579.jpg?rect=0,441,1766,2138&w=400&auto=format',
               },
               {
                 name: 'Kunwer Dhillon',
@@ -197,7 +197,7 @@ export default function AboutPage() {
                 credentials: 'MBA · BE · CSCP · LSSGB',
                 bio: 'Kunwer brings multi-disciplinary expertise in supply chain and business strategy, advising clients on Manitoba\'s business immigration pathways and investment planning.',
                 bioCn: 'Kunwer 在供应链和商业战略方面拥有跨学科专长，为客户提供曼省商业移民路径和投资规划的专业建议。',
-                initials: 'KD',
+                photo: 'https://cdn.sanity.io/images/3dek4247/production/d69719539c401df975065d217357e932f07b67cc-800x800.jpg?w=400&auto=format',
               },
               {
                 name: 'Hao Fu',
@@ -207,7 +207,7 @@ export default function AboutPage() {
                 credentials: 'MBA · CSC',
                 bio: 'Hao specializes in financial and investment advisory for business immigration clients, helping entrepreneurs structure their ventures for MPNP and Start-Up Visa success.',
                 bioCn: '傅浩专注于商业移民客户的财务与投资咨询，帮助创业者为曼省提名和创业签证的成功申请做好规划。',
-                initials: 'HF',
+                photo: 'https://cdn.sanity.io/images/3dek4247/production/e55914afb791dcae2d5247e565055e66f97989aa-594x662.png?rect=0,82,594,580&w=400&auto=format',
               },
               {
                 name: 'Shin Wang',
@@ -217,7 +217,7 @@ export default function AboutPage() {
                 credentials: '',
                 bio: 'Shin supports clients navigating the entrepreneur and investor immigration streams, bringing hands-on business experience and a strong network in the Winnipeg business community.',
                 bioCn: '王鑫支持客户办理创业者和投资者移民流程，凭借丰富的商业经验和温尼伯商业圈的人脉为客户提供帮助。',
-                initials: 'SH',
+                photo: 'https://cdn.sanity.io/images/3dek4247/production/b4f0a3d8ea49a29d76cfdb5eaadc966b39ff5ed5-1155x1132.png?w=400&auto=format',
               },
               {
                 name: 'Tony Luo',
@@ -227,13 +227,19 @@ export default function AboutPage() {
                 credentials: 'Financial Analyst',
                 bio: 'Tony advises business immigration clients on property investment and financial planning in Manitoba, helping them meet investment thresholds and build a strong financial foundation in Canada.',
                 bioCn: 'Tony 为商业移民客户提供曼省房产投资和财务规划建议，帮助他们满足投资要求并在加拿大建立稳固的财务基础。',
-                initials: 'TL',
+                photo: 'https://cdn.sanity.io/images/3dek4247/production/84b71ed60b8abdd481fe257722a8ecb4253ba355-1155x1132.png?w=400&auto=format',
               },
             ].map((member) => (
               <div key={member.name} className="card-premium flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-[#0F2A4A] flex items-center justify-center text-[#C9A96E] font-bold text-sm flex-shrink-0">
-                    {member.initials}
+                  <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#C9A96E]/30 flex-shrink-0">
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      width={56}
+                      height={56}
+                      className="w-full h-full object-cover object-top"
+                    />
                   </div>
                   <div>
                     <p className="font-semibold text-[#0F2A4A] text-sm">{member.name}</p>
