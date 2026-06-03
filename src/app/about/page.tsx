@@ -251,7 +251,6 @@ export default function AboutPage() {
                   <p className="text-[#0F2A4A]/60 text-xs font-mono mb-3">{member.credentials}</p>
                 ) : <div className="mb-3" />}
                 <p className="text-gray-500 text-xs leading-relaxed flex-1">{member.bio}</p>
-                <p className="text-gray-300 text-xs leading-relaxed mt-2">{member.bioCn}</p>
               </div>
             ))}
           </div>
