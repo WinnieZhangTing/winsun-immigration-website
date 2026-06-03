@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -109,6 +110,149 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Meet Our Team */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <div className="section-label justify-center mb-4">
+              <span className="gold-line" />
+              The People Behind Your Journey
+              <span className="gold-line" />
+            </div>
+            <h2 className="font-serif text-4xl text-[#0F2A4A] mb-2">Meet Our Team</h2>
+            <p className="text-[#C9A96E] font-light mb-6">认识我们的团队</p>
+            <p className="text-gray-500 text-sm leading-relaxed max-w-2xl mx-auto">
+              WINSUN Immigration Solutions Inc. is led by licensed Canadian immigration professionals and supported by a team of business consultants, MBA graduates, project managers, and entrepreneurial advisors.
+            </p>
+            <p className="text-gray-400 text-xs leading-relaxed max-w-2xl mx-auto mt-2">
+              WINSUN 移民解决方案由持牌加拿大移民专业人员领导，并由商业顾问、MBA毕业生、项目经理和创业顾问团队提供支持。
+            </p>
+          </div>
+
+          {/* Team Photo */}
+          <div className="relative rounded-3xl overflow-hidden mb-16 shadow-2xl">
+            <Image
+              src="/team-photo.jpg"
+              alt="WINSUN Immigration Solutions Team"
+              width={1400}
+              height={700}
+              className="w-full object-cover object-top"
+              style={{ maxHeight: '520px' }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#06182B]/60 via-transparent to-transparent" />
+            <div className="absolute bottom-8 left-8 right-8 text-center">
+              <p className="text-white font-serif text-2xl mb-1">Our Winnipeg Team</p>
+              <p className="text-[#C9A96E] text-sm font-light">温尼伯专业团队</p>
+            </div>
+          </div>
+
+          {/* Team Member Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: 'Ting (Winnie) Zhang',
+                nameCn: '张婷',
+                title: 'Founder & CEO · RCIC-IRB',
+                titleCn: '创始人兼首席执行官 · 持牌移民顾问',
+                credentials: 'RCIC R731688 · Class L3-IRB · MBA · PMP',
+                bio: 'Ting is a Regulated Canadian Immigration Consultant (RCIC-IRB, R731688) licensed by the College of Immigration and Citizenship Consultants. She founded WINSUN to deliver expert, ethical immigration counsel across all major pathways — from Start-Up Visa to refugee proceedings.',
+                bioCn: '张婷是持牌加拿大移民顾问（RCIC-IRB，编号R731688），由移民和公民顾问学院授权。她创立WINSUN，为客户提供从创业签证到难民听证的全面专业移民服务。',
+                initials: 'TZ',
+              },
+              {
+                name: 'Summer Wang',
+                nameCn: '王莹',
+                title: 'Chief Operating Officer',
+                titleCn: '首席运营官',
+                credentials: 'MBA',
+                bio: 'Summer oversees day-to-day operations and client experience, ensuring every application is managed with precision and care from submission to approval.',
+                bioCn: 'Summer 负责日常运营和客户体验，确保每份申请从提交到获批都以精准和用心的态度处理。',
+                initials: 'SW',
+              },
+              {
+                name: 'Jing Zhang',
+                nameCn: '张晶',
+                title: 'Project Management Director',
+                titleCn: '项目管理总监',
+                credentials: 'BA',
+                bio: 'Jing keeps every client file on track and on time. Her meticulous project management ensures no deadline is missed and every document is in order.',
+                bioCn: 'Jing 确保每位客户的申请按时推进，以严谨的项目管理确保没有截止日期被错过，每份文件都井然有序。',
+                initials: 'JZ',
+              },
+              {
+                name: 'Ivy Yang',
+                nameCn: '杨蕊',
+                title: 'Client Relations Manager',
+                titleCn: '客户关系经理',
+                credentials: 'MA, Mass Communication',
+                bio: 'Ivy is the welcoming voice of WINSUN. She ensures every client feels informed, supported, and confident at every stage of their immigration journey.',
+                bioCn: 'Ivy 是 WINSUN 温暖的门面，确保每位客户在移民旅程的每个阶段都感到知情、受支持和充满信心。',
+                initials: 'IY',
+              },
+              {
+                name: 'Kunwer Dhillon',
+                nameCn: 'Kunwer Dhillon',
+                title: 'Strategic Advisor',
+                titleCn: '战略顾问',
+                credentials: 'MBA · BE · CSCP · LSSGB',
+                bio: 'Kunwer brings multi-disciplinary expertise in supply chain and business strategy, advising clients on Manitoba\'s business immigration pathways and investment planning.',
+                bioCn: 'Kunwer 在供应链和商业战略方面拥有跨学科专长，为客户提供曼省商业移民路径和投资规划的专业建议。',
+                initials: 'KD',
+              },
+              {
+                name: 'Hao Fu',
+                nameCn: '傅浩',
+                title: 'Strategic Advisor',
+                titleCn: '战略顾问',
+                credentials: 'MBA · CSC',
+                bio: 'Hao specializes in financial and investment advisory for business immigration clients, helping entrepreneurs structure their ventures for MPNP and Start-Up Visa success.',
+                bioCn: '傅浩专注于商业移民客户的财务与投资咨询，帮助创业者为曼省提名和创业签证的成功申请做好规划。',
+                initials: 'HF',
+              },
+              {
+                name: 'Shin Wang',
+                nameCn: '王鑫',
+                title: 'Strategic Advisor',
+                titleCn: '战略顾问',
+                credentials: '',
+                bio: 'Shin supports clients navigating the entrepreneur and investor immigration streams, bringing hands-on business experience and a strong network in the Winnipeg business community.',
+                bioCn: '王鑫支持客户办理创业者和投资者移民流程，凭借丰富的商业经验和温尼伯商业圈的人脉为客户提供帮助。',
+                initials: 'SH',
+              },
+              {
+                name: 'Tony Luo',
+                nameCn: '罗Tony',
+                title: 'Investment Strategist',
+                titleCn: '投资策略师',
+                credentials: 'Financial Analyst',
+                bio: 'Tony advises business immigration clients on property investment and financial planning in Manitoba, helping them meet investment thresholds and build a strong financial foundation in Canada.',
+                bioCn: 'Tony 为商业移民客户提供曼省房产投资和财务规划建议，帮助他们满足投资要求并在加拿大建立稳固的财务基础。',
+                initials: 'TL',
+              },
+            ].map((member) => (
+              <div key={member.name} className="card-premium flex flex-col">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-[#0F2A4A] flex items-center justify-center text-[#C9A96E] font-bold text-sm flex-shrink-0">
+                    {member.initials}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#0F2A4A] text-sm">{member.name}</p>
+                    <p className="text-gray-400 text-xs">{member.nameCn}</p>
+                  </div>
+                </div>
+                <p className="text-[#C9A96E] font-semibold text-xs mb-0.5">{member.title}</p>
+                <p className="text-gray-400 text-xs mb-1">{member.titleCn}</p>
+                {member.credentials ? (
+                  <p className="text-[#0F2A4A]/60 text-xs font-mono mb-3">{member.credentials}</p>
+                ) : <div className="mb-3" />}
+                <p className="text-gray-500 text-xs leading-relaxed flex-1">{member.bio}</p>
+                <p className="text-gray-300 text-xs leading-relaxed mt-2">{member.bioCn}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* RCIC credentials */}
       <section className="py-24 gradient-navy">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -118,7 +262,25 @@ export default function AboutPage() {
             <span className="gold-line" />
           </div>
           <h2 className="font-serif text-4xl text-white mb-3">Working with a Regulated Consultant</h2>
-          <p className="text-[#C9A96E] text-lg font-light mb-12">与持牌顾问合作的重要性</p>
+          <p className="text-[#C9A96E] text-lg font-light mb-8">与持牌顾问合作的重要性</p>
+
+          {/* Licence badge */}
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white/5 border border-[#C9A96E]/40 rounded-2xl px-8 py-5 mb-12">
+            <div className="text-left">
+              <p className="text-[#C9A96E] text-xs tracking-widest uppercase font-semibold mb-1">Licensed RCIC · CICC Verified</p>
+              <p className="text-white font-serif text-xl font-semibold">Ting (Winnie) Zhang</p>
+              <p className="text-white/60 text-sm">College ID: <span className="text-[#C9A96E] font-mono font-bold">R731688</span> &nbsp;·&nbsp; Class L3 - RCIC-IRB &nbsp;·&nbsp; <span className="text-green-400 font-semibold">Active</span></p>
+            </div>
+            <Link
+              href="https://college-ic.ca/protecting-the-public/find-an-immigration-consultant?id=R731688"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 px-5 py-2.5 rounded-xl border border-[#C9A96E] text-[#C9A96E] text-xs font-semibold hover:bg-[#C9A96E] hover:text-[#0F2A4A] transition-colors"
+            >
+              Verify on CICC ↗
+            </Link>
+          </div>
+
           <div className="grid sm:grid-cols-3 gap-6 text-left">
             {[
               {
@@ -129,9 +291,9 @@ export default function AboutPage() {
               },
               {
                 icon: '⚖️',
-                title: 'Legal Representation',
-                cn: '法律代理权',
-                desc: 'Only authorized representatives can legally represent you before IRCC. We protect your rights throughout the entire process.',
+                title: 'IRB Representation',
+                cn: '移民和难民委员会代理权',
+                desc: 'As a Class L3 RCIC-IRB, Ting Zhang holds the highest licence class — authorized to represent clients before the Immigration and Refugee Board of Canada.',
               },
               {
                 icon: '🛡️',
