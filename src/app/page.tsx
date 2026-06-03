@@ -79,7 +79,7 @@ export default function HomePage() {
                 Professional immigration consulting for entrepreneurs, workers, students, and families — delivered with expertise, integrity, and results-driven guidance.
               </p>
               <p className="text-white/40 text-sm leading-relaxed mb-10 max-w-xl">
-                为创业者、职场人士、学生及家庭提供专业移民咨询，兼具专业性、诚信度与中英双语服务。
+                为创业者、职场人士、学生及家庭提供专业移民咨询，兼具专业性、诚信度与以结果为导向的专业指导。
               </p>
 
               <div className="flex flex-wrap gap-4">
