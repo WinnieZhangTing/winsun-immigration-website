@@ -136,8 +136,8 @@ export default function AboutPage() {
               alt="WINSUN Immigration Solutions Team"
               width={1400}
               height={700}
-              className="w-full object-cover object-top"
-              style={{ maxHeight: '520px' }}
+              className="w-full object-cover"
+              style={{ maxHeight: '520px', objectPosition: 'center 40%' }}
               unoptimized
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#06182B]/60 via-transparent to-transparent" />
