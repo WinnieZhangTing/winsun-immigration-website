@@ -377,7 +377,8 @@ export default function HomePage() {
                 { src: '/cert-pmp.jpg', label: 'PMP Certification', labelCn: 'PMP认证项目管理师', tag: 'PMP' },
                 { src: '/cert-ba.jpg', label: 'BA – Business Admin', labelCn: '商业管理学士', tag: 'BA Degree' },
                 { src: '/cert-french.jpg', label: 'French Language Certificate', labelCn: '法语语言证书', tag: 'French' },
-                { src: '/cert-gmca.jpg', label: 'GMCA MBA', labelCn: 'GMCA MBA证书', tag: 'Mini-MBA' },
+                { src: '/cert-gmca.jpg', label: 'GMCA MBA', labelCn: 'GMCA MBA证书', tag: 'MBA' },
+                { src: '/cert-CAPIC.jpg', label: 'CAPIC Membership', labelCn: '加拿大专业移民顾问协会会员', tag: 'CAPIC' },
               ].map((cert) => (
                 <div key={cert.src} className="bg-white border border-[#E2E8F0] rounded-2xl p-4 flex gap-4 items-start shadow-sm hover:shadow-md transition-shadow group">
                   <div className="w-16 h-20 rounded-lg overflow-hidden border border-[#E2E8F0] flex-shrink-0 bg-[#F8FAFC]">
@@ -402,6 +403,7 @@ export default function HomePage() {
                     'BA · Business Administration',
                     'French Language Certificate',
                     'GMCA MBA Certificate',
+                    'CAPIC Registered Member · R24570',
                   ].map((c) => (
                     <div key={c} className="flex items-center gap-2">
                       <svg className="w-3.5 h-3.5 text-[#C9A96E] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
