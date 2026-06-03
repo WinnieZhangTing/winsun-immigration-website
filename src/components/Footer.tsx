@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 export default function Footer() {
   return (
     <footer className="bg-[#06182B] text-white">
@@ -116,6 +117,21 @@ export default function Footer() {
                 <a href="mailto:winnie@winsunimmigration.ca" className="text-white/50 hover:text-[#C9A96E] text-sm transition-colors">
                   winnie@winsunimmigration.ca
                 </a>
+              </div>
+              {/* QR codes */}
+              <div className="flex gap-4 mt-4">
+                <div className="flex flex-col items-center gap-1">
+                  <div className="w-16 h-16 rounded-lg overflow-hidden bg-white p-1">
+                    <Image src="/qr-wechat.png" alt="WeChat QR" width={56} height={56} className="w-full h-full object-contain" unoptimized />
+                  </div>
+                  <span className="text-white/30 text-xs">微信</span>
+                </div>
+                <div className="flex flex-col items-center gap-1">
+                  <div className="w-16 h-16 rounded-lg overflow-hidden bg-white p-1">
+                    <Image src="/qr-xiaohongshu.png" alt="小红书 QR" width={56} height={56} className="w-full h-full object-contain" unoptimized />
+                  </div>
+                  <span className="text-white/30 text-xs">小红书</span>
+                </div>
               </div>
             </address>
           </div>
