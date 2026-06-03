@@ -284,6 +284,7 @@ export default function ContactPage() {
                   width={128}
                   height={128}
                   className="w-full h-full object-contain"
+                  unoptimized
                 />
               </div>
               <div className="flex items-center gap-1.5">
@@ -299,6 +300,7 @@ export default function ContactPage() {
                   width={128}
                   height={128}
                   className="w-full h-full object-contain"
+                  unoptimized
                 />
               </div>
               <div className="flex items-center gap-1.5">
