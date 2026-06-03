@@ -14,7 +14,7 @@ const stats = [
   { number: '500+', label: 'Cases Approved', cn: '成功案例' },
   { number: '10+', label: 'Years of Experience', cn: '年从业经验' },
   { number: '95%', label: 'Success Rate', cn: '成功率' },
-  { number: '2', label: 'Languages Served', cn: '服务语言' },
+  { number: '20+', label: 'International Regions', cn: '国际业务区域' },
 ];
 
 const testimonials = [
@@ -76,10 +76,10 @@ export default function HomePage() {
                 您信赖的加拿大移民伙伴
               </p>
               <p className="text-white/60 text-lg leading-relaxed mb-3 max-w-xl">
-                Professional immigration consulting for entrepreneurs, workers, students, and families — delivered with expertise, integrity, and bilingual care.
+                Professional immigration consulting for entrepreneurs, workers, students, and families — delivered with expertise, integrity, and results-driven guidance.
               </p>
               <p className="text-white/40 text-sm leading-relaxed mb-10 max-w-xl">
-                为创业者、职场人士、学生及家庭提供专业移民咨询，兼具专业性、诚信度与双语关怀。
+                为创业者、职场人士、学生及家庭提供专业移民咨询，兼具专业性、诚信度与中英双语服务。
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -468,7 +468,7 @@ export default function HomePage() {
               { number: '10+', label: 'Years of Experience', labelCn: '10年以上经验', desc: 'Serving clients in Canada and internationally' },
               { number: '100+', label: 'Business Plans', labelCn: '100+商业计划书', desc: 'Prepared for entrepreneur and start-up clients' },
               { number: '50+', label: 'Start-Up Visa Projects', labelCn: '50+创业移民项目', desc: 'Across technology, health, energy, education, and service sectors' },
-              { number: '2', label: 'Bilingual Service', labelCn: '中英文双语服务', desc: 'English and Chinese communication support' },
+              { number: '20+', label: 'International Regions', labelCn: '国际业务区域', desc: 'Serving clients across global markets' },
             ].map((s) => (
               <div key={s.label} className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow text-center">
                 <div className="font-serif text-4xl text-[#C9A96E] font-bold mb-2">{s.number}</div>
