@@ -156,7 +156,7 @@ export default function AboutPage() {
                 titleCn: '创始人兼首席执行官 · 持牌移民顾问',
                 credentials: 'RCIC R731688 · Class L3-IRB · MBA · PMP',
                 bio: 'Ting is a Regulated Canadian Immigration Consultant (RCIC-IRB, R731688) licensed by the College of Immigration and Citizenship Consultants. She founded WINSUN to deliver expert, ethical immigration counsel across all major pathways — from Start-Up Visa to refugee proceedings.',
-                bioCn: '张婷是持牌加拿大移民顾问（RCIC-IRB，编号R731688），由移民和公民顾问学院授权。她创立WINSUN，为客户提供从创业签证到难民听证的全面专业移民服务。',
+                bioCn: 'Ting 是持牌加拿大移民顾问（RCIC-IRB，编号R731688），由移民和公民顾问学院授权。她创立WINSUN，为客户提供从创业签证到难民听证的全面专业移民服务。',
                 photo: 'https://cdn.sanity.io/images/3dek4247/production/4ec00417dbb113e4855e29630264add9b82ca1c0-819x1024.png?w=400&auto=format',
               },
               {
@@ -206,7 +206,7 @@ export default function AboutPage() {
                 titleCn: '战略顾问',
                 credentials: 'MBA · CSC',
                 bio: 'Hao specializes in financial and investment advisory for business immigration clients, helping entrepreneurs structure their ventures for MPNP and Start-Up Visa success.',
-                bioCn: '傅浩专注于商业移民客户的财务与投资咨询，帮助创业者为曼省提名和创业签证的成功申请做好规划。',
+                bioCn: 'Hao 专注于商业移民客户的财务与投资咨询，帮助创业者为曼省提名和创业签证的成功申请做好规划。',
                 photo: 'https://cdn.sanity.io/images/3dek4247/production/e55914afb791dcae2d5247e565055e66f97989aa-594x662.png?rect=0,82,594,580&w=400&auto=format',
               },
               {
@@ -216,7 +216,7 @@ export default function AboutPage() {
                 titleCn: '战略顾问',
                 credentials: '',
                 bio: 'Shin supports clients navigating the entrepreneur and investor immigration streams, bringing hands-on business experience and a strong network in the Winnipeg business community.',
-                bioCn: '王鑫支持客户办理创业者和投资者移民流程，凭借丰富的商业经验和温尼伯商业圈的人脉为客户提供帮助。',
+                bioCn: 'Shin 支持客户办理创业者和投资者移民流程，凭借丰富的商业经验和温尼伯商业圈的人脉为客户提供帮助。',
                 photo: 'https://cdn.sanity.io/images/3dek4247/production/b4f0a3d8ea49a29d76cfdb5eaadc966b39ff5ed5-1155x1132.png?w=400&auto=format',
               },
               {
@@ -251,6 +251,7 @@ export default function AboutPage() {
                   <p className="text-[#0F2A4A]/60 text-xs font-mono mb-3">{member.credentials}</p>
                 ) : <div className="mb-3" />}
                 <p className="text-gray-500 text-xs leading-relaxed flex-1">{member.bio}</p>
+                <p className="text-gray-300 text-xs leading-relaxed mt-2">{member.bioCn}</p>
               </div>
             ))}
           </div>
