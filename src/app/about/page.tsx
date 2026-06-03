@@ -155,8 +155,8 @@ export default function AboutPage() {
                 title: 'Founder & CEO · RCIC-IRB',
                 titleCn: '创始人兼首席执行官 · 持牌移民顾问',
                 credentials: 'RCIC R731688 · Class L3-IRB · MBA · PMP',
-                bio: 'Ting is a Regulated Canadian Immigration Consultant (RCIC-IRB, R731688) licensed by the College of Immigration and Citizenship Consultants. She founded WINSUN to deliver expert, ethical immigration counsel across all major pathways — from Start-Up Visa to refugee proceedings.',
-                bioCn: 'Ting 是持牌加拿大移民顾问（RCIC-IRB，编号R731688），由移民和公民顾问学院授权。她创立WINSUN，为客户提供从创业签证到难民听证的全面专业移民服务。',
+                bio: 'Winnie is a Regulated Canadian Immigration Consultant (RCIC-IRB, R731688) licensed by the College of Immigration and Citizenship Consultants. She founded WINSUN to deliver expert, ethical immigration counsel across all major pathways — from Start-Up Visa to refugee proceedings.',
+                bioCn: 'Winnie 是持牌加拿大移民顾问（RCIC-IRB，编号R731688），由移民和公民顾问学院授权。她创立WINSUN，为客户提供从创业签证到难民听证的全面专业移民服务。',
                 photo: 'https://cdn.sanity.io/images/3dek4247/production/4ec00417dbb113e4855e29630264add9b82ca1c0-819x1024.png?w=400&auto=format',
               },
               {
