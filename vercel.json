@@ -1,13 +1,5 @@
 {
   "framework": "nextjs",
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "winsunimmigration.ca" }],
-      "destination": "https://www.winsunimmigration.ca/$1",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/api/(.*)",
