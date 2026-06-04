@@ -66,7 +66,7 @@ export default function AboutPage() {
               {[
                 { n: '500+', en: 'Clients Served', cn: '客户服务经验' },
                 { n: '10+', en: 'Years Experience', cn: '从业年限' },
-                { n: '100+', en: 'Business Clients', cn: '商业客户服务经验' },
+                { n: '100+', en: 'Business Projects', cn: '商业咨询项目经验' },
                 { n: '20+', en: 'International Regions', cn: '国际业务区域' },
               ].map((s) => (
                 <div key={s.n} className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl p-5 text-center">

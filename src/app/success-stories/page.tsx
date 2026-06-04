@@ -106,7 +106,7 @@ export default function SuccessStoriesPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
               { n: '500+', en: 'Clients Served', cn: '客户服务经验' },
-              { n: '100+', en: 'Business Clients', cn: '商业客户服务经验' },
+              { n: '100+', en: 'Business Projects', cn: '商业咨询项目经验' },
               { n: '10+', en: 'Years Experience', cn: '从业年限' },
               { n: '20+', en: 'International Regions', cn: '国际业务区域' },
             ].map((s) => (
