@@ -11,7 +11,7 @@ const services = [
 ];
 
 const stats = [
-  { number: '500+', label: 'Cases Approved', cn: '成功案例' },
+  { number: '500+', label: 'Clients Served', cn: '客户服务经验' },
   { number: '10+', label: 'Years of Experience', cn: '年从业经验' },
   { number: '95%', label: 'Success Rate', cn: '成功率' },
   { number: '20+', label: 'International Regions', cn: '国际业务区域' },

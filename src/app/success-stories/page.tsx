@@ -105,7 +105,7 @@ export default function SuccessStoriesPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
-              { n: '500+', en: 'Cases Approved', cn: '成功案例' },
+              { n: '500+', en: 'Clients Served', cn: '客户服务经验' },
               { n: '95%', en: 'Success Rate', cn: '成功率' },
               { n: '10+', en: 'Years Experience', cn: '从业年限' },
               { n: '20+', en: 'International Regions', cn: '国际业务区域' },

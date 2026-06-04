@@ -64,10 +64,10 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 gap-5">
               {[
-                { n: '500+', en: 'Cases Approved', cn: '成功案例' },
+                { n: '500+', en: 'Clients Served', cn: '客户服务经验' },
                 { n: '10+', en: 'Years Experience', cn: '从业年限' },
                 { n: '95%', en: 'Success Rate', cn: '成功率' },
-                { n: '2', en: 'Languages', cn: '服务语言' },
+                { n: '20+', en: 'International Regions', cn: '国际业务区域' },
               ].map((s) => (
                 <div key={s.n} className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl p-5 text-center">
                   <div className="font-serif text-3xl text-[#C9A96E] font-bold mb-1">{s.n}</div>
