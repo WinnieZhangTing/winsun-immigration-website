@@ -87,7 +87,7 @@ export default function ContactPage() {
                   <p className="text-gray-600">200-1460 Chevrier Blvd</p>
                   <p className="text-gray-600">Winnipeg, MB R3T 1Y7</p>
                   <a
-                    href="https://maps.google.com/?q=1460+Chevrier+Blvd+Winnipeg+MB"
+                    href="https://www.google.com/maps/search/?api=1&query=WINSUN+Immigration+Solutions+Inc.+200-1460+Chevrier+Blvd+Winnipeg+MB+R3T+1Y7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#C9A96E] text-sm hover:underline mt-1 inline-block"
