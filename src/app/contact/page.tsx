@@ -36,7 +36,7 @@ export default function ContactPage() {
       if (res.ok) {
         if (typeof window !== 'undefined' && window.gtag) {
           window.gtag('event', 'conversion', {
-            send_to: 'AW-18321021000/ZzwRCNWVs9AcEMiwkqBE',
+            send_to: 'AW-18321021000/r6MgCL2B9dAcEMiwkqBE',
           });
         }
         setState('success');
