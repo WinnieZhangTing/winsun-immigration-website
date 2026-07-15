@@ -6,6 +6,12 @@ import PageHero from '@/components/PageHero';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
   const [state, setState] = useState<FormState>('idle');
@@ -28,6 +34,11 @@ export default function ContactPage() {
       });
 
       if (res.ok) {
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'conversion', {
+            send_to: 'AW-18321021000/ZzwRCNWVs9AcEMiwkqBE',
+          });
+        }
         setState('success');
       } else {
         const data = await res.json();
