@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const OWNER_EMAIL = 'winnie@winsunimmigration.ca';
-const OWNER_FROM_EMAIL = 'WINSUN Website <notifications@winsunimmigration.ca>';
+const OWNER_FROM_EMAIL = 'WINSUN Immigration <onboarding@resend.dev>';
 const CLIENT_FROM_EMAIL = 'Winnie Zhang <winnie@winsunimmigration.ca>';
 
 export async function POST(request: Request) {
@@ -123,10 +123,6 @@ export async function POST(request: Request) {
 
     if (clientEmailResult.error) {
       console.error('Client auto-reply email error:', clientEmailResult.error);
-      return NextResponse.json(
-        { error: 'Failed to send client confirmation email.' },
-        { status: 500 }
-      );
     }
 
     return NextResponse.json({ success: true });
