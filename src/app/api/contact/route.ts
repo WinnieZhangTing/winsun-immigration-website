@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const OWNER_EMAIL = 'winnie@winsunimmigration.ca';
-const FROM_EMAIL = 'WINSUN Immigration <onboarding@resend.dev>'; // change after domain verified
+const FROM_EMAIL = 'WINSUN Immigration <winnie@winsunimmigration.ca>';
 
 export async function POST(request: Request) {
   try {
