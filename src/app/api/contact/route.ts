@@ -111,11 +111,13 @@ export async function POST(request: Request) {
               Looking forward to speaking with you!
             </p>
 
-            <p style="color:#374151;font-size:15px;line-height:1.8;margin:0;">
+            <p style="color:#374151;font-size:15px;line-height:1.8;margin:0 0 18px;">
               Best regards,<br/>
-              <strong>Winnie Zhang</strong><br/>
+              <strong>Winnie Zhang, MBA, PMP, RCIC-IRB</strong><br/>
               WINSUN Immigration Solutions Inc.
             </p>
+
+            <img src="https://www.winsunimmigration.ca/email-signature.jpg" alt="Winnie Zhang WINSUN Immigration Solutions signature" style="display:block;width:100%;max-width:540px;height:auto;border:0;margin:8px 0 0;" />
           </div>
         </div>
       `,
