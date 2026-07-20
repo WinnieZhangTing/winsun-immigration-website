@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     }
 
     // ── 1. Notify Winnie with full inquiry details ──────────────────────────
-    await resend.emails.send({
+    const ownerEmailResult = await resend.emails.send({
       from: OWNER_FROM_EMAIL,
       to: OWNER_EMAIL,
       replyTo: email,
@@ -65,10 +65,18 @@ export async function POST(request: Request) {
       `,
     });
 
+    if (ownerEmailResult.error) {
+      console.error('Owner notification email error:', ownerEmailResult.error);
+      return NextResponse.json(
+        { error: 'Failed to send inquiry notification.' },
+        { status: 500 }
+      );
+    }
+
     // ── 2. Auto-reply to the client ───────────────────────────────────────
     const serviceName = service || 'immigration';
 
-    await resend.emails.send({
+    const clientEmailResult = await resend.emails.send({
       from: CLIENT_FROM_EMAIL,
       to: email,
       replyTo: OWNER_EMAIL,
@@ -112,6 +120,14 @@ export async function POST(request: Request) {
         </div>
       `,
     });
+
+    if (clientEmailResult.error) {
+      console.error('Client auto-reply email error:', clientEmailResult.error);
+      return NextResponse.json(
+        { error: 'Failed to send client confirmation email.' },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
