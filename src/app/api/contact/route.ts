@@ -4,7 +4,8 @@ import { NextResponse } from 'next/server';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const OWNER_EMAIL = 'winnie@winsunimmigration.ca';
-const FROM_EMAIL = 'WINSUN Immigration <winnie@winsunimmigration.ca>';
+const OWNER_FROM_EMAIL = 'WINSUN Website <notifications@winsunimmigration.ca>';
+const CLIENT_FROM_EMAIL = 'Winnie Zhang <winnie@winsunimmigration.ca>';
 
 export async function POST(request: Request) {
   try {
@@ -20,7 +21,7 @@ export async function POST(request: Request) {
 
     // ── 1. Notify Winnie with full inquiry details ──────────────────────────
     await resend.emails.send({
-      from: FROM_EMAIL,
+      from: OWNER_FROM_EMAIL,
       to: OWNER_EMAIL,
       replyTo: email,
       subject: `New Inquiry from ${name} — WINSUN Website`,
@@ -68,7 +69,7 @@ export async function POST(request: Request) {
     const serviceName = service || 'immigration';
 
     await resend.emails.send({
-      from: FROM_EMAIL,
+      from: CLIENT_FROM_EMAIL,
       to: email,
       replyTo: OWNER_EMAIL,
       subject: 'Thank you for contacting WINSUN Immigration Solutions',
