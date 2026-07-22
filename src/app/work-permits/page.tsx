@@ -85,7 +85,7 @@ export default function WorkPermitsPage() {
       <section className="py-20 bg-white text-center px-4">
         <h2 className="font-serif text-4xl text-[#0F2A4A] mb-3">Need help with a Work Permit?</h2>
         <p className="text-[#C9A96E] text-lg font-light mb-8">需要工作许可方面的帮助？</p>
-        <Link href="/contact" className="btn-primary text-base py-4 px-10">Book a Consultation 预约咨询</Link>
+        <Link href="/book-consultation" className="btn-primary text-base py-4 px-10">Book a Consultation 预约咨询</Link>
       </section>
     </>
   );

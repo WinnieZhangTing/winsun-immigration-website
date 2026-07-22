@@ -55,7 +55,7 @@ export default function ServicesPage() {
         <h2 className="font-serif text-4xl text-white mb-3">Not sure which pathway fits you?</h2>
         <p className="text-[#C9A96E] text-lg font-light mb-8">不确定哪条移民路径最适合您？</p>
         <p className="text-white/50 max-w-xl mx-auto mb-8 text-sm">Book a free consultation. We assess your background, goals, and timeline — then recommend the best immigration strategy.</p>
-        <Link href="/contact" className="btn-primary text-base py-4 px-10">
+        <Link href="/book-consultation" className="btn-primary text-base py-4 px-10">
           Book Free Consultation 免费预约咨询
         </Link>
       </section>

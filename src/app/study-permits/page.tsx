@@ -83,7 +83,7 @@ export default function StudyPermitsPage() {
       <section className="py-20 bg-[#F8FAFC] text-center px-4">
         <h2 className="font-serif text-4xl text-[#0F2A4A] mb-3">Ready to study in Canada?</h2>
         <p className="text-[#C9A96E] text-lg font-light mb-8">准备好在加拿大留学了吗？</p>
-        <Link href="/contact" className="btn-primary text-base py-4 px-10">Book a Consultation 预约咨询</Link>
+        <Link href="/book-consultation" className="btn-primary text-base py-4 px-10">Book a Consultation 预约咨询</Link>
       </section>
     </>
   );

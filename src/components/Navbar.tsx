@@ -120,7 +120,7 @@ export default function Navbar() {
                 </Link>
               )
             )}
-            <Link href="/contact" className="ml-4 btn-primary text-sm py-2.5 px-6">
+            <Link href="/book-consultation" className="ml-4 btn-primary text-sm py-2.5 px-6">
               Book Consultation
             </Link>
           </div>
@@ -170,7 +170,7 @@ export default function Navbar() {
             </div>
           ))}
           <Link
-            href="/contact"
+            href="/book-consultation"
             className="btn-primary mt-5 w-full justify-center"
             onClick={() => setIsOpen(false)}
           >

@@ -83,7 +83,7 @@ export default function HomePage() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="btn-primary">
+                <Link href="/book-consultation" className="btn-primary">
                   Book a Free Consultation
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -236,7 +236,7 @@ export default function HomePage() {
               </div>
               <div className="flex gap-4 mt-10">
                 <Link href="/about" className="btn-navy">About Our Firm</Link>
-                <Link href="/contact" className="btn-primary">Book Consultation</Link>
+                <Link href="/book-consultation" className="btn-primary">Book Consultation</Link>
               </div>
             </div>
 
@@ -555,7 +555,7 @@ export default function HomePage() {
                 Book a free initial consultation. Our experts will assess your situation and identify the best immigration pathway for you.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/contact" className="btn-primary text-base py-4 px-10">
+                <Link href="/book-consultation" className="btn-primary text-base py-4 px-10">
                   Book Free Consultation 预约免费咨询
                 </Link>
                 <Link href="/services" className="btn-outline text-base py-4 px-8">

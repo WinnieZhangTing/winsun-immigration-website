@@ -72,7 +72,7 @@ export default function Footer() {
               {[
                 { href: '/about', en: 'About Us', cn: '关于我们' },
                 { href: '/success-stories', en: 'Success Stories', cn: '成功案例' },
-                { href: '/contact', en: 'Book Consultation', cn: '预约咨询' },
+                { href: '/book-consultation', en: 'Book Consultation', cn: '预约咨询' },
                 { href: '/contact', en: 'Contact Us', cn: '联系我们' },
               ].map((item) => (
                 <li key={item.en}>

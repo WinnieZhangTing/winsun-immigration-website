@@ -47,7 +47,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="flex gap-4 mt-10">
-              <Link href="/contact" className="btn-primary">Book a Consultation</Link>
+              <Link href="/book-consultation" className="btn-primary">Book a Consultation</Link>
               <Link href="/services" className="btn-navy">Our Services</Link>
             </div>
           </div>

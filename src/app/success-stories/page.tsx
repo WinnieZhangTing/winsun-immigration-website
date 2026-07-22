@@ -179,7 +179,7 @@ export default function SuccessStoriesPage() {
         </div>
         <h2 className="font-serif text-4xl text-white mb-3">Ready to Write Your Success Story?</h2>
         <p className="text-[#C9A96E] text-lg font-light mb-8">准备好书写您自己的成功故事了吗？</p>
-        <Link href="/contact" className="btn-primary text-base py-4 px-10">
+        <Link href="/book-consultation" className="btn-primary text-base py-4 px-10">
           Book a Free Consultation 预约免费咨询
         </Link>
       </section>

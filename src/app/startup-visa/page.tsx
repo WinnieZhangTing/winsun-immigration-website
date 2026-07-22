@@ -120,7 +120,7 @@ export default function StartUpVisaPage() {
         <h2 className="font-serif text-4xl text-[#0F2A4A] mb-3">Interested in the Start-Up Visa?</h2>
         <p className="text-[#C9A96E] text-lg font-light mb-8">对创业签证感兴趣？</p>
         <p className="text-gray-500 max-w-lg mx-auto mb-8 text-sm">We evaluate your business concept, connect you with designated organizations, and guide your entire application from start to approval.</p>
-        <Link href="/contact" className="btn-primary text-base py-4 px-10">Book a Consultation 预约咨询</Link>
+        <Link href="/book-consultation" className="btn-primary text-base py-4 px-10">Book a Consultation 预约咨询</Link>
       </section>
     </>
   );
