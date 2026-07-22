@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL;
+const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/winnie-winsunimmigration/30min';
 
 export default function BookConsultationPage() {
   return (
