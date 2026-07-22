@@ -58,7 +58,7 @@ export default function BookConsultationPage() {
                 <p>Prefer to contact us first?</p>
                 <p className="text-white/35 mt-1">如果您希望先留言咨询，也可以直接联系我们。</p>
                 <Link href="/contact" className="inline-flex mt-4 text-[#C9A96E] font-semibold hover:text-[#E8C88A] transition-colors">
-                  Contact WINSUN ->
+                  Contact WINSUN &rarr;
                 </Link>
               </div>
             </aside>
