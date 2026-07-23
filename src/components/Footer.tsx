@@ -131,6 +131,12 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col items-center gap-1">
                   <div className="w-16 h-16 rounded-lg overflow-hidden bg-white p-1">
+                    <Image src="/qr-whatsapp.png" alt="WhatsApp QR" width={56} height={56} className="w-full h-full object-contain" unoptimized />
+                  </div>
+                  <span className="text-white/30 text-xs">WhatsApp</span>
+                </div>
+                <div className="flex flex-col items-center gap-1">
+                  <div className="w-16 h-16 rounded-lg overflow-hidden bg-white p-1">
                     <Image src="/qr-xiaohongshu.png" alt="小红书 QR" width={56} height={56} className="w-full h-full object-contain" unoptimized />
                   </div>
                   <span className="text-white/30 text-xs">小红书</span>
