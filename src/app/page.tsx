@@ -10,6 +10,7 @@ const services = [
   { icon: '✈️', href: '/visitor-visa', en: 'Visitor Visa / TRV', cn: '访客签证', desc: 'Visit family, attend business meetings, or explore Canada with a Temporary Resident Visa.' },
   { icon: '👨‍👩‍👧', href: '/family-sponsorship', en: 'Family Sponsorship', cn: '家庭担保', desc: 'Spouse, dependent child, parent, and family sponsorship application support.' },
   { icon: '🚀', href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划', desc: 'Launch your innovative business in Canada and obtain permanent residence through a designated organization.' },
+  { icon: '🧭', href: '/contact', en: 'Permanent Residence Strategy', cn: '永久居民规划', desc: 'Personalized PR pathway planning through Express Entry, PNP, family sponsorship, and business immigration options.' },
 ];
 
 const stats = [
