@@ -14,9 +14,12 @@ const navLinks = [
     cn: '服务',
     children: [
       { href: '/business-immigration', label: 'Business Immigration', cn: '商业移民' },
+      { href: '/express-entry', label: 'Express Entry', cn: '快速通道' },
+      { href: '/mpnp', label: 'MPNP', cn: '曼省提名' },
       { href: '/work-permits', label: 'Work Permits', cn: '工作许可' },
       { href: '/study-permits', label: 'Study Permits', cn: '学习许可' },
       { href: '/visitor-visa', label: 'Visitor Visa / TRV', cn: '访客签证' },
+      { href: '/family-sponsorship', label: 'Family Sponsorship', cn: '家庭担保' },
       { href: '/startup-visa', label: 'Start-Up Visa', cn: '创业签证' },
     ],
   },

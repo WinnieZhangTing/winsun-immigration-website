@@ -46,9 +46,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { href: '/business-immigration', en: 'Business Immigration', cn: '商业移民' },
+                { href: '/express-entry', en: 'Express Entry', cn: '快速通道' },
+                { href: '/mpnp', en: 'MPNP', cn: '曼省提名' },
                 { href: '/work-permits', en: 'Work Permits & LMIA', cn: '工作许可' },
                 { href: '/study-permits', en: 'Study Permits', cn: '学习许可' },
                 { href: '/visitor-visa', en: 'Visitor Visa / TRV', cn: '访客签证' },
+                { href: '/family-sponsorship', en: 'Family Sponsorship', cn: '家庭担保' },
                 { href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划' },
               ].map((item) => (
                 <li key={item.href}>

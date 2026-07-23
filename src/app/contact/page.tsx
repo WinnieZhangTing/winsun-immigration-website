@@ -233,12 +233,14 @@ export default function ContactPage() {
                     >
                       <option value="">Select a service 请选择服务...</option>
                       <option value="Business Immigration 商业移民">Business Immigration 商业移民</option>
+                      <option value="Express Entry 快速通道">Express Entry 快速通道</option>
+                      <option value="MPNP 曼省提名">MPNP 曼省提名</option>
                       <option value="Work Permits & LMIA 工作许可">Work Permits & LMIA 工作许可</option>
                       <option value="Study Permit 学习许可">Study Permit 学习许可</option>
                       <option value="Visitor Visa / TRV 访客签证">Visitor Visa / TRV 访客签证</option>
+                      <option value="Family Sponsorship 家庭担保">Family Sponsorship 家庭担保</option>
                       <option value="Start-Up Visa Program 创业签证计划">Start-Up Visa Program 创业签证计划</option>
                       <option value="Permanent Residence 永久居留权">Permanent Residence 永久居留权</option>
-                      <option value="Family Sponsorship 家庭担保">Family Sponsorship 家庭担保</option>
                       <option value="Other / Not Sure 其他">Other / Not Sure 其他</option>
                     </select>
                   </div>

@@ -4,18 +4,19 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Immigration Services',
-  description: 'Comprehensive Canadian immigration services: Start-Up Visa, Work Permits, LMIA, Study Permits, Visitor Visa, Business Immigration, and Permanent Residence. Winnipeg, MB.',
+  description: 'Comprehensive Canadian immigration services: Express Entry, MPNP, Family Sponsorship, Start-Up Visa, Work Permits, LMIA, Study Permits, Visitor Visa, Business Immigration, and Permanent Residence. Winnipeg, MB.',
   alternates: { canonical: 'https://www.winsunimmigration.ca/services' },
 };
 
 const services = [
-  { icon: '🚀', href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划', desc: 'A direct pathway to Canadian permanent residence for innovative entrepreneurs backed by designated organizations.', descCn: '为获得指定机构支持的创新型创业者提供直接申请加拿大永久居留的途径。' },
-  { icon: '💼', href: '/work-permits', en: 'Work Permits & LMIA', cn: '工作许可及劳工市场评估', desc: 'Employer-sponsored work authorization and full LMIA management for workers and Canadian employers.', descCn: '为工人和加拿大雇主提供雇主担保工作授权及完整的劳工市场评估管理服务。' },
-  { icon: '🎓', href: '/study-permits', en: 'Study Permits', cn: '学习许可', desc: 'Study at Canada\'s world-class institutions and build a clear pathway to PGWP and permanent residence.', descCn: '在加拿大世界一流院校就读，清晰规划毕业后工作许可及永久居留路径。' },
-  { icon: '✈️', href: '/visitor-visa', en: 'Visitor Visa / TRV', cn: '访客签证', desc: 'Temporary Resident Visa applications for family visits, tourism, business travel, and medical visits.', descCn: '家庭探访、旅游、商务出行及就医的临时居民签证申请服务。' },
   { icon: '🏢', href: '/business-immigration', en: 'Business Immigration', cn: '商业移民', desc: 'Manitoba PNP Business Investor Stream and other provincial programs for experienced investors and entrepreneurs.', descCn: '面向有经验投资者和创业者的曼省提名商业投资流程及其他省提名计划。' },
-  { icon: '🏠', href: '/contact', en: 'Permanent Residence Strategy', cn: '永久居留权策略', desc: 'Strategic PR planning through Express Entry CRS optimization, PNP alignment, and family sponsorship.', descCn: '通过快速通道综合排名优化、省提名计划衔接及家庭担保制定永久居留策略。' },
-  { icon: '👨‍👩‍👧', href: '/contact', en: 'Family Sponsorship', cn: '家庭担保', desc: 'Spouse, dependent children, and parent sponsorship applications with thorough documentation support.', descCn: '配偶、受抚养子女及父母担保申请，提供全面的文件支持服务。' },
+  { icon: '🏆', href: '/express-entry', en: 'Express Entry', cn: '快速通道', desc: 'Federal skilled immigration strategy through CRS assessment, profile preparation, and invitation planning.', descCn: '通过综合排名评估、档案准备及获邀策略规划联邦技术移民申请。' },
+  { icon: '🍁', href: '/mpnp', en: 'Manitoba Provincial Nominee Program', cn: '曼省提名计划', desc: 'MPNP pathways for skilled workers, international graduates, and business applicants with Manitoba connections.', descCn: '为具备曼省联系的技术人才、国际毕业生及商业申请人规划曼省提名路径。' },
+  { icon: '💼', href: '/work-permits', en: 'Work Permits & LMIA', cn: '工作许可及劳工市场评估', desc: 'Employer-sponsored work authorization and full LMIA management for applicants and Canadian employers.', descCn: '为申请人和加拿大雇主提供雇主担保工作授权及完整的劳工市场评估管理服务。' },
+  { icon: '🎓', href: '/study-permits', en: 'Study Permits', cn: '学习许可', desc: 'Study at Canada's world-class institutions and build a clear pathway to PGWP and permanent residence.', descCn: '在加拿大世界一流院校就读，清晰规划毕业后工作许可及永久居留路径。' },
+  { icon: '✈️', href: '/visitor-visa', en: 'Visitor Visa / TRV', cn: '访客签证', desc: 'Temporary Resident Visa applications for family visits, tourism, business travel, and medical visits.', descCn: '家庭探访、旅游、商务出行及就医的临时居民签证申请服务。' },
+  { icon: '👨‍👩‍👧', href: '/family-sponsorship', en: 'Family Sponsorship', cn: '家庭担保', desc: 'Spouse, dependent children, and parent sponsorship applications with thorough documentation support.', descCn: '配偶、受抚养子女及父母担保申请，提供全面的文件支持服务。' },
+  { icon: '🚀', href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划', desc: 'A direct pathway to Canadian permanent residence for innovative entrepreneurs backed by designated organizations.', descCn: '为获得指定机构支持的创新型创业者提供直接申请加拿大永久居留的途径。' },
 ];
 
 export default function ServicesPage() {

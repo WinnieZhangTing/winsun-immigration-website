@@ -2,12 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const services = [
-  { icon: '🚀', href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划', desc: 'Launch your innovative business in Canada and obtain permanent residence through a designated organization.' },
+  { icon: '🏢', href: '/business-immigration', en: 'Business Immigration', cn: '商业移民', desc: 'Provincial investor and entrepreneur programs for experienced business professionals.' },
+  { icon: '🏆', href: '/express-entry', en: 'Express Entry', cn: '快速通道', desc: 'CRS assessment, profile preparation, and invitation strategy for federal skilled immigration.' },
+  { icon: '🍁', href: '/mpnp', en: 'MPNP', cn: '曼省提名', desc: 'Manitoba nomination pathways for skilled workers, graduates, and business applicants.' },
   { icon: '💼', href: '/work-permits', en: 'Work Permits & LMIA', cn: '工作许可', desc: 'Navigate employer-sponsored work authorization and Labour Market Impact Assessment applications.' },
   { icon: '🎓', href: '/study-permits', en: 'Study Permits', cn: '学习许可', desc: 'Study at world-class Canadian institutions with a clear path to post-graduation work and PR.' },
   { icon: '✈️', href: '/visitor-visa', en: 'Visitor Visa / TRV', cn: '访客签证', desc: 'Visit family, attend business meetings, or explore Canada with a Temporary Resident Visa.' },
-  { icon: '🏢', href: '/business-immigration', en: 'Business Immigration', cn: '商业移民', desc: 'Provincial investor and entrepreneur programs for experienced business professionals.' },
-  { icon: '🏠', href: '/services', en: 'Permanent Residence', cn: '永久居留权', desc: 'Strategic PR pathways through Express Entry, PNP, and family sponsorship programs.' },
+  { icon: '👨‍👩‍👧', href: '/family-sponsorship', en: 'Family Sponsorship', cn: '家庭担保', desc: 'Spouse, dependent child, parent, and family sponsorship application support.' },
+  { icon: '🚀', href: '/startup-visa', en: 'Start-Up Visa Program', cn: '创业签证计划', desc: 'Launch your innovative business in Canada and obtain permanent residence through a designated organization.' },
 ];
 
 const stats = [
@@ -121,10 +123,10 @@ export default function HomePage() {
                 </div>
                 <div className="space-y-1 mb-6">
                   {[
-                    { en: 'Start-Up Visa Program', cn: '创业签证计划', href: '/startup-visa' },
-                    { en: 'Work Permits & LMIA', cn: '工作许可', href: '/work-permits' },
-                    { en: 'Study Permits', cn: '学习许可', href: '/study-permits' },
                     { en: 'Business Immigration', cn: '商业移民', href: '/business-immigration' },
+                    { en: 'Express Entry', cn: '快速通道', href: '/express-entry' },
+                    { en: 'MPNP', cn: '曼省提名', href: '/mpnp' },
+                    { en: 'Start-Up Visa Program', cn: '创业签证计划', href: '/startup-visa' },
                   ].map((item) => (
                     <Link
                       key={item.href}
