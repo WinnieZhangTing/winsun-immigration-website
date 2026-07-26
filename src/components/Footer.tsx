@@ -1,6 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+const socialLinks = [
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/profile.php?id=100068859444636',
+    label: 'f',
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/winsunimmigration/',
+    label: 'IG',
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/133386815/',
+    label: 'in',
+  },
+];
 
 export default function Footer() {
   return (
@@ -34,6 +51,23 @@ export default function Footer() {
               </div>
               <div className="px-2 py-1 bg-[#C9A96E]/10 border border-[#C9A96E]/20 rounded text-[#C9A96E] text-xs font-medium">
                 CICC Member
+              </div>
+            </div>
+            <div className="mt-6">
+              <p className="text-white/40 text-xs tracking-wider uppercase mb-3">Follow WINSUN</p>
+              <div className="flex items-center gap-2">
+                {socialLinks.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={item.name}
+                    className="w-9 h-9 rounded-full border border-[#C9A96E]/30 bg-white/5 text-[#C9A96E] hover:bg-[#C9A96E] hover:text-[#06182B] transition-colors flex items-center justify-center text-xs font-bold"
+                  >
+                    {item.label}
+                  </a>
+                ))}
               </div>
             </div>
           </div>

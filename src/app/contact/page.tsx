@@ -6,6 +6,24 @@ import PageHero from '@/components/PageHero';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
 
+const socialLinks = [
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/profile.php?id=100068859444636',
+    label: 'f',
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/winsunimmigration/',
+    label: 'IG',
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/133386815/',
+    label: 'in',
+  },
+];
+
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
@@ -136,6 +154,27 @@ export default function ContactPage() {
                   <p className="text-gray-600">Monday – Sunday: 9:00 AM – 6:00 PM</p>
                   <p className="text-gray-400 text-sm">周一至周日：上午9:00 – 下午6:00</p>
                 </div>
+              </div>
+            </div>
+
+            <div className="mt-10 bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm">
+              <p className="text-[#0F2A4A] font-semibold mb-1">Follow WINSUN 关注我们</p>
+              <p className="text-gray-400 text-sm mb-5">Connect with us on social media for updates and immigration insights.</p>
+              <div className="grid sm:grid-cols-3 gap-3">
+                {socialLinks.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 rounded-xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 hover:border-[#C9A96E]/50 hover:bg-[#C9A96E]/5 transition-colors group"
+                  >
+                    <span className="w-8 h-8 rounded-full bg-[#0F2A4A] text-[#C9A96E] flex items-center justify-center text-xs font-bold group-hover:bg-[#C9A96E] group-hover:text-[#0F2A4A] transition-colors">
+                      {item.label}
+                    </span>
+                    <span className="text-[#0F2A4A] text-sm font-semibold">{item.name}</span>
+                  </a>
+                ))}
               </div>
             </div>
 
