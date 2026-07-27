@@ -145,6 +145,24 @@ export default function ContactPage() {
 
               <div className="flex gap-5">
                 <div className="w-12 h-12 rounded-xl bg-[#0F2A4A] flex items-center justify-center flex-shrink-0">
+                  <span className="text-[#C9A96E] text-lg font-bold">WA</span>
+                </div>
+                <div>
+                  <p className="text-[#0F2A4A] font-semibold mb-2">WhatsApp 咨询</p>
+                  <a
+                    href="https://wa.me/14317775668?text=Hello%20WINSUN%20Immigration%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#1DA851]"
+                  >
+                    Send WhatsApp Message
+                  </a>
+                  <p className="mt-2 text-xs text-gray-400">点击按钮可直接发送 WhatsApp 咨询消息</p>
+                </div>
+              </div>
+
+              <div className="flex gap-5">
+                <div className="w-12 h-12 rounded-xl bg-[#0F2A4A] flex items-center justify-center flex-shrink-0">
                   <svg className="w-5 h-5 text-[#C9A96E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
