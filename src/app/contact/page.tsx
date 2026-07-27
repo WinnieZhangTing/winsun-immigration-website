@@ -153,7 +153,7 @@ export default function ContactPage() {
                     href="https://wa.me/14317775668?text=Hello%20WINSUN%20Immigration%2C%20I%20would%20like%20to%20book%20a%20consultation."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#1DA851]"
+                    className="inline-flex items-center justify-center rounded-xl bg-[#C9A96E] px-5 py-3 text-sm font-semibold text-[#0F2A4A] shadow-sm transition-colors hover:bg-[#A8854A]"
                   >
                     Send WhatsApp Message
                   </a>
