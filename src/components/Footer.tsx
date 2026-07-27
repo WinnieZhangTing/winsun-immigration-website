@@ -17,6 +17,11 @@ const socialLinks = [
     href: 'https://www.linkedin.com/company/133386815/',
     label: 'in',
   },
+  {
+    name: 'WhatsApp',
+    href: 'https://wa.me/14317775668?text=Hello%20WINSUN%20Immigration%2C%20I%20would%20like%20to%20book%20a%20consultation.',
+    label: 'WA',
+  },
 ];
 
 export default function Footer() {
