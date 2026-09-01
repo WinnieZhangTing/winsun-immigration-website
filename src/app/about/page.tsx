@@ -176,8 +176,8 @@ export default function AboutPage() {
                 title: 'Director of Client Engagement & Communications',
                 titleCn: '客户关系与品牌战略总监',
                 credentials: 'BA, Communication Sciences',
-                bio: 'Denisse brings experience in client engagement, brand strategy, service operations, and cross-cultural communication. Having personally navigated the Manitoba Provincial Nominee Program, she provides practical, personalized support to clients in both English and Spanish.',
-                bioCn: 'Denisse 深耕客户体验战略、品牌管理与客户关系运营，具备服务流程优化及跨文化沟通经验。凭借亲身办理曼省省提名项目的经历，她以英语和西班牙语为全球客户提供专业、精准且个性化的支持。',
+                bio: "With a Bachelor's degree in Communication Sciences, Denisse brings a distinctive blend of corporate communications, talent strategy, client engagement, and operational leadership developed across Mexico and Canada. Her expertise in evaluating professional profiles and transferable skills, together with her own successful journey through the Manitoba Provincial Nominee Program, gives her a nuanced understanding of Canadian labour market opportunities and the personal realities of immigration. As Director of Client Engagement & Communications, she transforms insight into thoughtful client strategies and delivers a refined, culturally responsive experience to clients worldwide in both English and Spanish.",
+                bioCn: 'Denisse 拥有传播科学学士学位，兼具企业品牌沟通、人才战略、客户关系与运营管理经验，职业足迹横跨墨西哥与加拿大。她在专业人才画像及可转移技能评估方面的积累，加之亲身成功通过曼省省提名项目定居加拿大，使她能够同时洞察加拿大就业市场机遇与移民过程中的真实需求。作为客户关系与品牌战略总监，她将专业判断与个人经历转化为有温度、有深度的客户策略，并以英语和西班牙语为全球客户提供专业、精细且高度个性化的服务体验。',
                 photo: '/dennis.jpg',
               },
               {
