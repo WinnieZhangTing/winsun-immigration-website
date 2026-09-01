@@ -166,8 +166,8 @@ export default function AboutPage() {
                 title: 'Chief Operating Officer',
                 titleCn: '首席运营官',
                 credentials: 'MBA',
-                bio: 'Summer oversees day-to-day operations and client experience, ensuring every application is managed with precision and care from submission to approval.',
-                bioCn: 'Summer 负责日常运营和客户体验，确保每份申请从提交到获批都以精准和用心的态度处理。',
+                bio: "Summer leads WINSUN's day-to-day operations, client service standards, and cross-functional coordination. With an MBA and a strong focus on operational excellence, she ensures every client file moves forward with precision, efficiency, and clear communication. Her leadership supports a seamless, professional experience from the initial consultation through the final decision.",
+                bioCn: 'Summer 统筹 WINSUN 的日常运营、客户服务标准及跨部门协作。凭借 MBA 专业背景和对卓越运营的持续追求，她确保每个客户案件都以精准、高效且沟通清晰的方式稳步推进。她的管理为客户从初次咨询到最终决定提供顺畅、专业的全流程体验。',
                 photo: 'https://cdn.sanity.io/images/3dek4247/production/ff042e8b35ea5f222f76d1b80fc540230c801d0a-400x400.jpg?w=400&auto=format',
               },
               {
