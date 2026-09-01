@@ -173,11 +173,11 @@ export default function AboutPage() {
               {
                 name: 'Dennis',
                 nameCn: 'Dennis',
-                title: 'Director of Client Engagement and Communications',
+                title: 'Director of Client Engagement & Communications',
                 titleCn: '客户参与与传播总监',
                 credentials: 'BA, Communication Sciences',
-                bio: "With a Bachelor's degree in Communication Sciences, Dennis began her career in Mexico City in Internal Communications and Human Resources, gaining experience in recruitment, talent selection, and corporate training. Her recruitment background provides valuable insight into professional profiles, transferable skills, and their potential within the Canadian job market. After successfully navigating the Manitoba Provincial Nominee Program and making Canada her home, she built extensive experience in client service, administration, and operations. As Director of Client Engagement and Communications, she combines her professional expertise and personal immigration journey to understand clients' goals, identify potential pathways, and provide a supportive, personalized experience to clients around the world in both English and Spanish.",
-                bioCn: 'Dennis 拥有传播科学学士学位，早年在墨西哥城从事内部传播与人力资源工作，在招聘、人才甄选及企业培训方面积累了丰富经验。她的招聘背景使她能够深入理解不同职业背景、可转移技能及其在加拿大就业市场中的发展潜力。通过曼省省提名项目成功定居加拿大后，Dennis 又在客户服务、行政管理及运营领域积累了广泛经验。作为客户参与与传播总监，她结合专业经验与个人移民经历，理解客户目标、识别潜在路径，并以英语和西班牙语为全球客户提供细致、个性化的服务体验。',
+                bio: 'Dennis brings experience in internal communications, human resources, recruitment, and client service. Having personally navigated the Manitoba Provincial Nominee Program, she provides practical, personalized support to clients in both English and Spanish.',
+                bioCn: 'Dennis 在内部传播、人力资源、招聘及客户服务方面拥有丰富经验。凭借亲身办理曼省省提名项目的经历，她以英语和西班牙语为客户提供务实、个性化的支持。',
                 photo: '/dennis.jpg',
               },
               {
