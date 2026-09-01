@@ -171,13 +171,13 @@ export default function AboutPage() {
                 photo: 'https://cdn.sanity.io/images/3dek4247/production/ff042e8b35ea5f222f76d1b80fc540230c801d0a-400x400.jpg?w=400&auto=format',
               },
               {
-                name: 'Dennis',
-                nameCn: 'Dennis',
+                name: 'Denisse Valenzuela D Gless',
+                nameCn: 'Denisse Valenzuela D Gless',
                 title: 'Director of Client Engagement & Communications',
                 titleCn: '客户参与与传播总监',
                 credentials: 'BA, Communication Sciences',
-                bio: 'Dennis brings experience in internal communications, human resources, recruitment, and client service. Having personally navigated the Manitoba Provincial Nominee Program, she provides practical, personalized support to clients in both English and Spanish.',
-                bioCn: 'Dennis 在内部传播、人力资源、招聘及客户服务方面拥有丰富经验。凭借亲身办理曼省省提名项目的经历，她以英语和西班牙语为客户提供务实、个性化的支持。',
+                bio: 'Denisse brings experience in internal communications, human resources, recruitment, and client service. Having personally navigated the Manitoba Provincial Nominee Program, she provides practical, personalized support to clients in both English and Spanish.',
+                bioCn: 'Denisse 在内部传播、人力资源、招聘及客户服务方面拥有丰富经验。凭借亲身办理曼省省提名项目的经历，她以英语和西班牙语为客户提供务实、个性化的支持。',
                 photo: '/dennis.jpg',
               },
               {
