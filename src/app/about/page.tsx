@@ -156,8 +156,8 @@ export default function AboutPage() {
                 title: 'Founder & CEO · RCIC-IRB',
                 titleCn: '创始人兼首席执行官 · 持牌移民顾问',
                 credentials: 'RCIC R731688 · Class L3-IRB · MBA · PMP',
-                bio: 'Winnie is a Regulated Canadian Immigration Consultant (RCIC-IRB, R731688) licensed by the College of Immigration and Citizenship Consultants. She founded WINSUN to deliver expert, ethical immigration counsel across all major pathways — from Start-Up Visa to refugee proceedings.',
-                bioCn: 'Winnie 是持牌加拿大移民顾问（RCIC-IRB，编号R731688），由移民和公民顾问学院授权。她创立WINSUN，为客户提供从创业签证到难民听证的全面专业移民服务。',
+                bio: 'Winnie Zhang is a Regulated Canadian Immigration Consultant (RCIC-IRB, R731688), accomplished entrepreneur, and strategic leader with an MBA and PMP designation. As Founder and CEO of WINSUN, she combines regulatory expertise, business acumen, and an entrepreneurial mindset to transform complex immigration challenges into clear, forward-looking strategies. Her vision is to build an internationally trusted advisory platform that empowers global entrepreneurs, professionals, and families to establish lasting success in Canada.',
+                bioCn: 'Winnie Zhang 是持牌加拿大移民顾问（RCIC-IRB，编号 R731688），也是兼具企业家精神与战略视野的管理者，拥有 MBA 与 PMP 专业背景。作为 WINSUN 创始人兼首席执行官，她将移民法规专长、商业洞察与创新思维相结合，把复杂的移民挑战转化为清晰、前瞻且可执行的规划。她致力于打造具有国际视野与高度信赖的专业咨询平台，助力全球企业家、专业人士及家庭在加拿大实现长期发展。',
                 photo: 'https://cdn.sanity.io/images/3dek4247/production/4ec00417dbb113e4855e29630264add9b82ca1c0-819x1024.png?w=400&auto=format',
               },
               {
