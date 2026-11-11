@@ -3,8 +3,8 @@ import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
-  title: 'Book a Consultation',
-  description: 'Book an initial immigration consultation with WINSUN Immigration Solutions Inc. in Winnipeg.',
+  title: 'Private RCIC Immigration Consultation',
+  description: 'Book a confidential private consultation with an independent Regulated Canadian Immigration Consultant (RCIC). WINSUN is not affiliated with the Government of Canada or IRCC.',
   alternates: {
     canonical: 'https://www.winsunimmigration.ca/book-consultation',
   },
@@ -16,29 +16,43 @@ export default function BookConsultationPage() {
   return (
     <main>
       <PageHero
-        label="Book a Consultation"
-        title="Schedule Your Initial Consultation"
-        titleCn="预约初步咨询"
-        subtitle="Choose a time to speak with WINSUN Immigration Solutions about your immigration goals, eligibility, and next steps."
-        subtitleCn="请选择适合您的时间，与 WINSUN 移民顾问沟通您的移民目标、申请资格及下一步规划。"
+        label="Private RCIC Consultation"
+        title="Book a Confidential Case Review"
+        titleCn="预约私人移民咨询"
+        subtitle="Speak with an independent Regulated Canadian Immigration Consultant about your circumstances, goals, and available options."
+        subtitleCn="与独立的加拿大持牌移民顾问（RCIC）沟通您的个人情况、目标及可行选择。"
       />
+
+      <section className="bg-[#FFF8E8] border-y border-[#C9A96E]/35" aria-label="Independent service disclosure">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <p className="text-[#0F2A4A] text-sm font-semibold leading-relaxed">
+            Independent private consulting service — not a government agency
+          </p>
+          <p className="text-[#334155] text-sm leading-relaxed mt-1">
+            WINSUN Immigration Solutions Inc. is an independent private immigration consulting firm operated by a Regulated Canadian Immigration Consultant (RCIC). We are not affiliated with the Government of Canada or Immigration, Refugees and Citizenship Canada (IRCC). We do not issue visas, permits, permanent residence, or other government documents, and we cannot guarantee any government decision or outcome.
+          </p>
+          <p className="text-[#64748B] text-xs leading-relaxed mt-2">
+            WINSUN 移民顾问有限公司为独立的私人移民咨询机构，由加拿大持牌移民顾问（RCIC）运营，与加拿大政府及 IRCC 无隶属关系。我们不签发签证、许可或永久居留身份，也不保证任何政府决定或结果。
+          </p>
+        </div>
+      </section>
 
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-[0.78fr_1.22fr] gap-10 items-start">
             <aside className="bg-[#0F2A4A] rounded-2xl p-8 text-white shadow-xl">
               <div className="section-label mb-5">
-                <span className="gold-line" /> Initial Consultation
+                <span className="gold-line" /> Private Consultation
               </div>
               <h2 className="font-serif text-3xl mb-4">What to Expect</h2>
               <p className="text-[#C9A96E] text-sm mb-6">咨询内容</p>
 
               <div className="space-y-5">
                 {[
-                  { en: 'Review your immigration goals and timeline', cn: '了解您的移民目标及时间规划' },
-                  { en: 'Assess possible application pathways', cn: '初步评估适合的申请路径' },
-                  { en: 'Identify key documents and next steps', cn: '说明所需材料及下一步安排' },
-                  { en: 'Discuss service scope and professional support', cn: '沟通服务范围及专业支持方式' },
+                  { en: 'Discuss your circumstances, goals, and timeline', cn: '了解您的个人情况、目标及时间规划' },
+                  { en: 'Review possible immigration options', cn: '初步评估可行的移民选择' },
+                  { en: 'Receive independent professional guidance', cn: '获取独立的专业咨询意见' },
+                  { en: 'Understand the scope of further professional services', cn: '了解后续专业服务的范围' },
                 ].map((item) => (
                   <div key={item.en} className="flex gap-3">
                     <div className="w-6 h-6 rounded-full bg-[#C9A96E]/20 border border-[#C9A96E]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -61,13 +75,16 @@ export default function BookConsultationPage() {
                   Contact WINSUN &rarr;
                 </Link>
               </div>
+              <div className="mt-6 rounded-lg border border-white/10 bg-white/5 p-4 text-xs leading-relaxed text-white/50">
+                A consultation does not constitute government approval and does not guarantee a visa, permit, status, or other outcome. All decisions are made by the responsible government authority.
+              </div>
             </aside>
 
             <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl shadow-sm overflow-hidden">
               {calendlyUrl ? (
                 <iframe
                   src={calendlyUrl}
-                  title="Book an initial consultation with WINSUN Immigration Solutions"
+                  title="Book a private RCIC consultation with WINSUN Immigration Solutions"
                   className="w-full h-[780px] border-0"
                 />
               ) : (

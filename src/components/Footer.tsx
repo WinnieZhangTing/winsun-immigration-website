@@ -189,7 +189,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 space-y-4">
           <p className="text-white/30 text-xs leading-relaxed max-w-4xl">
             <strong className="text-white/40">Disclaimer / 免责声明: </strong>
-            Information on this website is for general information only and does not constitute legal advice. Immigration outcomes depend on individual circumstances and IRCC assessment. 本网站信息仅供一般参考，不构成法律建议。移民结果取决于个人情况及IRCC评估。
+            WINSUN Immigration Solutions Inc. is an independent private immigration consulting firm operated by a Regulated Canadian Immigration Consultant (RCIC). We are not affiliated with the Government of Canada or Immigration, Refugees and Citizenship Canada (IRCC). We do not issue visas, permits, permanent residence, or other government documents, and we cannot guarantee any government decision or outcome. Information on this website is general information and does not constitute legal advice. WINSUN 移民顾问有限公司为独立的私人移民咨询机构，与加拿大政府及 IRCC 无隶属关系。我们不签发政府文件，也不保证任何政府决定或结果。
           </p>
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
             <p className="text-white/30 text-xs">© {new Date().getFullYear()} WINSUN Immigration Solutions Inc. All rights reserved.</p>
